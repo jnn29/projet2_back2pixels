@@ -1,6 +1,7 @@
 .navbar {
     background-color: #7058A8;
     font-family: "Jersey 20", sans-serif;
+    font-size:large;
     font-weight: 400;
     font-style: normal;
 }
@@ -11,6 +12,7 @@
   display: inline-block;
   padding: 8px 15px;
   font-size: 15px;
+  font-family: "Jersey 20", sans-serif;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -37,14 +39,15 @@ h1{
   font-weight: 400;
   font-style: normal;
 }
-p{
-  font-family: Arial, Helvetica, sans-serif;
+
+h5{
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style:normal;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+p{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .image {
@@ -53,3 +56,20 @@ p{
   box-shadow: 20px 20px #7058A8;
   border-radius: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+.img-thumbnail {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
