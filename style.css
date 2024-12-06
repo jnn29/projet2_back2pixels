@@ -4,9 +4,42 @@
     font-size:large;
     font-weight: 400;
     font-style: normal;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    padding: 5px 0; /* Réduire le padding pour amincir la navbar */
 }
 
+.navbar .nav-link {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
 
+.navbar .nav-link:hover {
+  border-bottom: 2px solid #76BBB0;
+}
+
+.navbar-collapse {
+  padding: 0; /* Ajoute de l'espace autour des éléments du menu */
+}
+
+.navbar-nav .nav-item {
+  padding: 0; /* Espacement entre chaque élément du menu */
+}
+
+.navbar-toggler {
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #76BBB0;
+  padding: 5px;
+  border-radius: 3px;
+}
 
 .custom-button {
   display: inline-block;
@@ -22,6 +55,9 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #007E8C;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #76BBB0, #58A49B); /* Dégradé */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Effet de texte en relief */
 }
 
 .custom-button:active {
@@ -46,6 +82,10 @@ h5{
   font-style:normal;
 }
 
+.list-style{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 p{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,15 +97,6 @@ p{
   border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 .img-thumbnail {
   vertical-align: middle;
   width: 50px;
@@ -73,3 +104,15 @@ p{
   border-radius: 50%;
 }
 
+
+footer{
+  background-color: #7058A8;
+}
+
+.footer-icon {
+  font-size: 2rem;
+}
+
+.custom-copy{
+  font-size: 1rem;
+}
