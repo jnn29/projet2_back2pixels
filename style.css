@@ -11,8 +11,7 @@
 }
 
 .navbar .nav-link {
-  transition: all 0.3s ease-in-out;
-  border-bottom: 2px solid transparent;
+  transition: transform 0.3s ease-in-out; /* Transition pour un effet fluide */
   margin-right: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -20,8 +19,9 @@
 }
 
 .navbar .nav-link:hover {
-  border-bottom: 2px solid #76BBB0;
+  transform: scale(1.1); /* Agrandit le texte à 110% */
 }
+
 
 .navbar-collapse {
   padding: 0; /* Ajoute de l'espace autour des éléments du menu */
