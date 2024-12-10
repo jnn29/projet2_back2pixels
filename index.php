@@ -3,7 +3,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.php">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -12,13 +12,13 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Jeux vidéo</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Consoles</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Qui sommes-nous</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(71); ?>">Qui sommes-nous</a>
                     </li>
                 </ul>
                 <div class="ms-auto">
@@ -61,7 +61,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/explorer jeux.png" class="card-img-top" alt="explorerjeux">
                     <div class="card-body">
                     <h5 class="card-title">Découvre les jeux vidéo</h5>
-                    <a href="#" class="custom-button">EXPLORER</a>
+                    <a href="<?php echo get_permalink(64); ?>" class="custom-button">EXPLORER</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/explorer consoles.png" class="card-img-top" alt="explorerconsoles">
                     <div class="card-body">
                     <h5 class="card-title">Découvre les consoles</h5>
-                    <a href="#" class="custom-button">EXPLORER</a>
+                    <a href="<?php echo get_permalink(68); ?>" class="custom-button">EXPLORER</a>
                     </div>
                 </div>
             </div>       
