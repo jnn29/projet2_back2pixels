@@ -1,33 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui sommes-nous</title>
+<?php
+/* header */
 
-</head>
+get_header();?>
+
 <body>
 
-    <h1>BACK2PIXELS C’EST QUOI ?</h1>
-    <p>Back2pixels, la plateforme dédiée aux passionnés de jeux
-         vidéo ! Nous avons créé un espace où tout le monde 
-         peut facilement échanger ses jeux, consoles, et 
-         accessoires, tout cela sans se ruiner. 
-         Notre mission est simple : offrir aux gamers un moyen
-          pratique, sûr et économique de découvrir de nouveaux
-           jeux et de faire évoluer leur collection.</p>
+<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">
+                <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" alt="Logo" width="60" height="48">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(); ?>">Qui sommes-nous</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <button class="custom-button">S'inscrire/se connecter</button>
+                    <button class="custom-button">Créer une annonce</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <p>Nous croyons au partage et à la communauté. 
-        C’est pourquoi nous mettons en avant un système 
-        d’échange sécurisé pour vous permettre de trouver 
-        exactement ce que vous cherchez. Que vous soyez 
-        amateur de rétrogaming ou adepte des dernières 
-        nouveautés, notre plateforme est là pour connecter 
-        les joueurs et favoriser les échanges.</p>
+    <div class="container">
+          <h1>BACK2PIXELS C’EST QUOI ?</h1>
+          <p>Back2pixels, la plateforme dédiée aux passionnés de jeux
+               vidéo ! Nous avons créé un espace où tout le monde 
+               peut facilement échanger ses jeux, consoles, et 
+               accessoires, tout cela sans se ruiner. 
+               Notre mission est simple : offrir aux gamers un moyen
+                    pratique, sûr et économique de découvrir de nouveaux
+                    jeux et de faire évoluer leur collection.</p>
 
-        <img src="Pers1.png" alt="Pers1" width="270" height="360">
+               <p>Nous croyons au partage et à la communauté. 
+               C’est pourquoi nous mettons en avant un système 
+               d’échange sécurisé pour vous permettre de trouver 
+               exactement ce que vous cherchez. Que vous soyez 
+               amateur de rétrogaming ou adepte des dernières 
+               nouveautés, notre plateforme est là pour connecter 
+               les joueurs et favoriser les échanges.</p>
+
+               <img src="<?php echo get_template_directory_uri(); ?>/Perso/Pers1.png" alt="Pers1" width="270" height="360">
+     </div>
 
 
+     <div class="container">
         <h1>NOTRE MISSION</h1>
         <p>Chez Back2Pixels, notre mission est de rendre le monde
              du gaming accessible à tous en créant un espace où
@@ -46,8 +74,10 @@
              découvrir de nouveaux univers et de connecter les
               joueurs entre eux.</p>
 
-              <img src="Pers2.png" alt="Pers2" width="270" height="360">
+              <img src="<?php echo get_template_directory_uri(); ?>/Perso/Pers2.png" alt="Pers2" width="270" height="360">
+     </div>
 
+     <div class="container">
               <h1>NOTRE HISTOIRE</h1>
               <p>L’aventure de Back2Pixels a commencé avec une
                  simple idée : permettre aux joueurs de découvrir
@@ -72,8 +102,10 @@
                 aventure : chaque échange est une nouvelle 
                 histoire !</p>
 
-                <img src="Pers3.png" alt="Pers3" width="270" height="360">
+                <img src="<?php echo get_template_directory_uri(); ?>/Perso/Pers3.png" alt="Pers3" width="270" height="360">
+     </div>
 
+     <div class="container">
                 <h1>CONFIANCE ET SÉCURITÉ</h1>
 
                 <p>Nous savons que la sécurité et la confiance 
@@ -97,8 +129,9 @@
                       découvrir de nouveaux jeux et de faire des
                        rencontres dans un environnement sûr.</p>
 
-                       <img src="Pers4.png" alt="Pers4" width="270" height="360">
-
+                       <img src="<?php echo get_template_directory_uri(); ?>/Perso/Pers4.png" alt="Pers4" width="270" height="360">
+     </div>
 
 </body>
-</html>
+
+<?php get_footer();?>

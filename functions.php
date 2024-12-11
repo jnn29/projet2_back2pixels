@@ -5,10 +5,12 @@ add_theme_support('post-thumbnails'); // support du thumbnail sur mes articles
 add_theme_support('menus'); // support des menus par notre theme
 
 function mon_theme_styles() {
-    wp_enqueue_styles('mon-theme-styles', get_stylesheet_uri());
+    wp_enqueue_style('mon-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'mon_theme_styles');
 ?>
+
+<?php
 
 function styles_scripts()
 {
@@ -43,5 +45,16 @@ function mytheme_add_page_template_support() {
 }
 add_action('after_setup_theme', 'mytheme_add_page_template_support');
 
+function ajouter_mon_css() {
+  wp_enqueue_style('mon-style', get_stylesheet_directory_uri() . '/css/style-personnalise.css');
+}
+add_action('wp_enqueue_scripts', 'ajouter_mon_css');
+
+function mon_theme_register_menus() {
+  register_nav_menus(array(
+      'main-menu' => __('Menu Principal'),
+  ));
+}
+add_action('after_setup_theme', 'mon_theme_register_menus');
 
 ?>
