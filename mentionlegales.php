@@ -32,3 +32,12 @@ get_header();?>
             </div>
         </div>
     </nav>
+
+    <h1>MENTIONS LÉGALES</h1>
+    <p>Back2Pixels SRL</p>
+    <p>Rue de la Poste, 11 
+        <b> 1030 Schaerbeek</p>
+    <p>E-mail : contact@back2pixels.com</p>
+    <p>Téléphone : 0486/17.49.55</p>
+
+    <?php get_footer();?>
