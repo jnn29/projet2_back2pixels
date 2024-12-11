@@ -18,7 +18,7 @@
                         <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(71); ?>">Qui sommes-nous</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(); ?>">Qui sommes-nous</a>
                     </li>
                 </ul>
                 <div class="ms-auto">
@@ -31,53 +31,79 @@
 
 
 
-
-    <div class="container my-5">
+    <div class="container mt-3">
     <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 mb-4">
-            <h1><b>BIENVENUE SUR BACK2PIXELS !</b></h1>
-            <p>
-                <p>Ici, nous croyons que le jeu vidéo est bien plus qu’un loisir :</p>
-                <p>c’est un lien qui rassemble. Rejoignez une communauté</p>
-                <p>passionnée où vous pouvez échanger vos jeux vidéo et</p>
-                <p>consoles préférés, découvrir de nouveaux univers, et</p>
-                <p>faire des rencontres enrichissantes avec des joueurs</p>
-                <p>qui partagent votre passion.</p>
+        <div class="col-12 position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/panorama.png" 
+                 alt="gensquijouent" 
+                 class="img-fluid" 
+                 style="border-radius: 20px;">
+            <div class="position-absolute top-0 start-0 p-3 text-white" style="padding-left: 40px; margin-left: 40px;">
+                <h1>BIENVENUE SUR BACK2PIXELS</h1>
+                <p><b>Échanges tes jeux vidéo et consoles facilement avec d'autres</b></p>
+                <p><b>passionnés. Simple, rapide et sécurisé, rejoint notre</b></p>
+                <p><b>communauté et redonne vie à tes jeux !</b></p>
                 <p><b>T'es prêt ? À toi de jouer !</b></p>
-            </p>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/gens qui jouent.png" alt="gensquijouent" class="img-fluid image-shadow">
+                <button class="custom-button">Créer une annonce</button>
+            </div>
         </div>
     </div>
-    </div>
+</div>
+
+
+
+
+
+
 
     
     
-    <div class="container" style= "margin-top: 100px;">
-        <div class="row gy-5">
-            <div class="col-md-6">
-                <div class="card" style="max-width: 400px; margin: 0 auto;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/explorer jeux.png" class="card-img-top" alt="explorerjeux">
-                    <div class="card-body">
-                    <h5 class="card-title">Découvre les jeux vidéo</h5>
-                    <a href="<?php echo get_permalink(64); ?>" class="custom-button">EXPLORER</a>
-                    </div>
+<div class="container" style="margin-top: 100px;">
+    <div class="row gy-5">
+        <div class="col-md-6">
+            <?php 
+            $article_1 = get_post(94);
+            ?>
+            <div class="card" style="max-width: 400px; margin: 0 auto;">
+                <a href="<?php echo get_permalink($article_1); ?>">
+                    <?php 
+                    if (has_post_thumbnail($article_1->ID)) {
+                        echo get_the_post_thumbnail($article_1->ID, 'medium', ['class' => 'card-img-top']);
+                    }
+                    ?>
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
+                    <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
+                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EXPLORER</a>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-6">
-                <div class="card" style="max-width: 400px; margin: 0 auto;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/explorer consoles.png" class="card-img-top" alt="explorerconsoles">
-                    <div class="card-body">
-                    <h5 class="card-title">Découvre les consoles</h5>
-                    <a href="<?php echo get_permalink(68); ?>" class="custom-button">EXPLORER</a>
-                    </div>
+        <div class="col-md-6">
+            <?php 
+            $article_2 = get_post(98); // Remplacer 68 par l'ID de l'autre article
+            ?>
+            <div class="card" style="max-width: 400px; margin: 0 auto;">
+                <a href="<?php echo get_permalink($article_2); ?>">
+                    <?php 
+                    if (has_post_thumbnail($article_2->ID)) {
+                        echo get_the_post_thumbnail($article_2->ID, 'medium', ['class' => 'card-img-top']);
+                    }
+                    ?>
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
+                    <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
+                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EXPLORER</a>
                 </div>
-            </div>       
-
+            </div>
         </div>
     </div>
+</div>
+
 
 
     <div class="container">
@@ -89,10 +115,6 @@
     </div>
     
 
-
- 
-    
-    
         
     <div class="container">
     <div class="row gy-5 mb-5">
@@ -118,7 +140,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                     <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -145,7 +167,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                     <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -172,7 +194,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                     <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -199,7 +221,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                     <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -232,7 +254,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                     <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -259,7 +281,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                     <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -286,7 +308,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                     <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -313,7 +335,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                     <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -347,7 +369,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                     <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -374,7 +396,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                     <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -401,7 +423,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                     <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -428,7 +450,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                     <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -461,7 +483,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                     <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -488,7 +510,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                     <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -515,7 +537,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                     <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>
@@ -542,7 +564,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                     <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
+                    <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
                 </div>
             </div>
         </div>

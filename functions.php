@@ -4,6 +4,15 @@ add_theme_support('title-tag'); // support de mon title tag
 add_theme_support('post-thumbnails'); // support du thumbnail sur mes articles
 add_theme_support('menus'); // support des menus par notre theme
 
+
+
+function mon_theme_styles() {
+    wp_enqueue_style('mon-theme-style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'mon_theme_styles');
+?>
+ 
+<?php
 function styles_scripts()
 {
   wp_enqueue_style(

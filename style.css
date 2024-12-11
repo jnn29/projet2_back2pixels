@@ -1,3 +1,7 @@
+/*
+Theme Name: Back2Pixels
+*/
+
 .navbar {
     background-color: #7058A8;
     font-family: "Jersey 20", sans-serif;
@@ -72,6 +76,7 @@
   margin-right: 10px;
 }
 
+
 h1{
   font-family: "Jersey 20", sans-serif;
   font-style: normal;
@@ -91,12 +96,6 @@ p{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.image-shadow {
-  max-width: 562px;
-  max-height: 595px;
-  box-shadow: 20px 20px #7058A8;
-  border-radius: 20px;
-}
 
 .img-thumbnail {
   vertical-align: middle;
