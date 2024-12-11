@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <!-- Votre contenu ici -->
+    <?php wp_head(); ?>
 </body>
 
 </html>
