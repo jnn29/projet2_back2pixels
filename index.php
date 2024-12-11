@@ -138,14 +138,14 @@ get_header();?>
                vons mis en place des mesures solides pour 
                garantir que chaque transaction sur notre 
                plateforme se déroule dans les meilleures 
-               conditions possibles.
-               En cas de problème, notre service client est
+               conditions possibles.</p>
+               <p>En cas de problème, notre service client est
                là pour vous accompagner et répondre à 
                toutes vos questions. Nous croyons fermement    
                qu’un environnement sécurisé et de 
                confiance est la clé pour créer une 
-               communauté de gamers soudée et respectueuse.
-               Back2Pixels, vous pouvez échanger en toute
+               communauté de gamers soudée et respectueuse.</p>
+               <p>Back2Pixels, vous pouvez échanger en toute
                sérénité et concentrer votre énergie sur ce
                qui compte vraiment : le plaisir de 
                découvrir de nouveaux jeux et de faire des
