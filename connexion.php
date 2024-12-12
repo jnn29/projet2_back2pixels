@@ -42,10 +42,9 @@ get_header();?>
 </nav>
 
 <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="text-center">
+        <div class="text-right">
             <?php
             echo "<h1>Bienvenue au centre !</h1>";
-            echo "<p>Ce contenu est centré grâce à Bootstrap et PHP.</p>";
             ?>
             
             <h1>Connecte-toi!</h1>
