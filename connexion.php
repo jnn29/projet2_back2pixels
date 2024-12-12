@@ -55,7 +55,7 @@ get_header();?>
             <label for="password" class="form-label">Mot de passe</label>
                 <input type="password" class="form-control" id="password" name="password" required>
         </div>
-            <button type="submit" class="btn btn-primary">Se connecter</button>
+            <button class="custom-button">Envoyer</button>
             </form>
         </div>
         </div>
