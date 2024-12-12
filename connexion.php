@@ -42,7 +42,7 @@ get_header();?>
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="text-right">
             <?php
-            echo "<h1>Bienvenue au centre !</h1>";
+            echo "<h1>Connecte-toi !</h1>";
             ?>
             
             <form action="welcome.php" method="post">
