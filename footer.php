@@ -11,12 +11,12 @@
                 <h5>BACK2PIXELS</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#" class="text-white text-decoration-none">
+                        <a href="<?php echo get_permalink(103); ?>" class="text-white text-decoration-none">
                             <i class="bi bi-info-circle-fill"></i> Qui sommes-nous ?
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white text-decoration-none">
+                        <a href="<?php echo get_permalink(107); ?>" class="text-white text-decoration-none">
                             <i class="bi bi-file-text-fill"></i> Mentions légales
                         </a>
                     </li>
@@ -27,7 +27,7 @@
 
             <div class="mb-4" style="flex: 1; text-align: left;">
                 <h5>CONTACTEZ-NOUS</h5>
-                <p><a href="mailto:contact@back2pixels.com" class="text-white"><i class="bi bi-envelope"></i> contact@back2pixels.com</a></p>
+                <p><a href="https://workspace.google.com/intl/fr/gmail/" class="text-white"><i class="bi bi-envelope"></i> contact@back2pixels.com</a></p>
                 <p><i class="bi bi-telephone-fill"></i> +33 486/17.49.55</p>
                 <p><i class="bi bi-geo-alt-fill"></i> Rue Poudlard, 11 9315 Narnia</p>
             </div>
@@ -35,8 +35,8 @@
 
             <div class="mb-4" style="flex: 1; text-align: left;">
                 <h5>SUIVEZ-NOUS</h5>
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook footer-icon"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-instagram footer-icon"></i></a>
+                <a href="https://fr-fr.facebook.com/" class="text-white me-3"><i class="bi bi-facebook footer-icon"></i></a>
+                <a href="#https://www.instagram.com/" class="text-white"><i class="bi bi-instagram footer-icon"></i></a>
             </div>
 
         </div>
