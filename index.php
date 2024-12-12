@@ -31,7 +31,7 @@
 
 
 
-    <div class="container mt-3">
+    <div class="container mt-2">
     <div class="row align-items-center">
         <div class="col-12 position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/images/panorama.png" 
@@ -50,15 +50,9 @@
     </div>
 </div>
 
-
-
-
-
-
-
     
     
-<div class="container" style="margin-top: 100px;">
+<div class="container mt-5">
     <div class="row gy-5">
         <div class="col-md-6">
             <?php 
@@ -83,7 +77,7 @@
 
         <div class="col-md-6">
             <?php 
-            $article_2 = get_post(98); // Remplacer 68 par l'ID de l'autre article
+            $article_2 = get_post(98);
             ?>
             <div class="card" style="max-width: 400px; margin: 0 auto;">
                 <a href="<?php echo get_permalink($article_2); ?>">
@@ -109,7 +103,7 @@
     <div class="container">
         <div class="row gy-5 mb-5">
             <div class="col-6 col-md-3">
-                <h1><br><b>FIL D'ACTUALITÉ</b></br></h1>
+                <h1 style="color: #7058A8;"><br><b>FIL D'ACTUALITÉ</b></br></h1>
             </div>
         </div>
     </div>
