@@ -5,6 +5,7 @@ get_header();?>
 
 <body>
 <nav class="navbar navbar-expand-lg">
+<nav class="navbar" style="background-color: #7058A8;">
     <div class="container">
         <a class="navbar-brand" href="index.php">
             <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
@@ -35,6 +36,7 @@ get_header();?>
     </div>
     </div>
     </div>
+</nav>
 </nav>
 
     <div class="container">
