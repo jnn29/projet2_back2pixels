@@ -42,25 +42,18 @@ get_header();?>
 </nav>
 
      <div class="container">
-          <h1>Inscription</h1>
+          <h1>Connecte-toi !</h1>
 
      <div class="container">
           <form action="welcome.php" method="post"></div>
 
-     <div class="container">Nom d'utilisateur</div>
+     <div class="container">Nom d'utilisateur ou email</div>
                <p><input type="text" name="nom d'utilisateur"></p>
-
-     <div class="container">Email</div> 
-               <p><input type="text" name="email"></p>
 
      <div class="container">Mot de passe</div> 
                <p><input type="text" name="mot de passe"></p>
 
-     <div class="container"><input type="radio" name="x" 
-          value="En t’inscrivant, tu comfirmes que tu as au moins au moins 18 ans.">
-               En t’inscrivant, tu comfirmes que tu as au moins au moins 18 ans.</div><br>
-
-               <button class="custom-button">Envoyer</button>
+                <button class="custom-button">Se connecter</button>
           </form>
      </div><br>
 </body>
