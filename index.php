@@ -38,13 +38,14 @@ get_header();?>
 </nav>
 </nav>
 
-     <div class="container">
-          <h1>MENTIONS LÉGALES</h1></div>
-     <div class="container">Back2Pixels SRL</div>
-     <div class="container">Rue de la Poste 11, 1030 Schaerbeek</div>
-     <div class="container">E-mail: contact@back2pixels.com</div>
-     <div class="container">Téléphone: 0486/17.49.55</div><br>
-
+<div class="container">
+     <h1>Inscription</h1>
+<form action="welcome.php" method="post">
+     Nom d'utilisateur <input type="text" name="nom d'utilisateur"><br>
+     Email <input type="text" name="email"><br>
+     Mot de passe <input type="text" name="mot de passe"><br>
+          <input type="submit">
+</form>
 </body>
 
 <?php get_footer();?>
