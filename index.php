@@ -43,14 +43,19 @@ get_header();?>
 
      <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
      <div class="text-right">
-     <?php
-     echo "<h1>Connecte-toi !</h1>";
-     ?>  
+          <?php
+          echo "<h1>Inscription</h1>";
+          ?> 
 
           <form action="welcome.php" method="post">
      <div class="mb-3">
-          <label for="username" class="form-label">Nom d'utilisateur ou email</label>
+          <label for="username" class="form-label">Nom d'utilisateur</label>
                <input type="text" class="form-control" id="username" name="username" required>
+     </div>
+
+     <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+               <input type="email" class="form-control" id="email" name="email" required>
      </div>
 
      <div class="mb-3">
@@ -58,12 +63,19 @@ get_header();?>
                <input type="password" class="form-control" id="password" name="password" required>
      </div>
 
-          <button class="custom-button">Se connecter</button>
-          </form>
-     </div>
+     <div class="form-check mb-3">
+               <input class="form-check-input" type="radio" id="confirmation" name="confirmation" value="oui" required>
+          <label class="form-check-label" for="confirmation">
+               En t’inscrivant, tu confirmes que tu as au moins 18 ans.
+          </label>
      </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <button class="custom-button">Envoyer</button>
+          </form>
+    </div>
+</div>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-<?php get_footer();?>
+<?php get_footer(); ?>

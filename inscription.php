@@ -41,28 +41,41 @@ get_header();?>
 </nav>
 </nav>
 
-<div class="container">
-          <h1>Inscription</h1>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="text-right">
+        <?php
+        echo "<h1>Inscription</h1>";
+        ?> 
 
-    <div class="container">
-        <form action="welcome.php" method="post"></div>
+        <form action="welcome.php" method="post">
+    <div class="mb-3">
+        <label for="username" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+    </div>
 
-    <div class="container">Nom d'utilisateur</div>
-            <p><input type="text" name="nom d'utilisateur"></p>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+    </div>
 
-    <div class="container">Email</div> 
-            <p><input type="text" name="email"></p>
+    <div class="mb-3">
+        <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+    </div>
 
-    <div class="container">Mot de passe</div> 
-        <p><input type="text" name="mot de passe"></p>
+    <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" id="confirmation" name="confirmation" value="oui" required>
+        <label class="form-check-label" for="confirmation">
+            En t’inscrivant, tu confirmes que tu as au moins 18 ans.
+        </label>
+    </div>
 
-    <div class="container"><input type="radio" name="x" 
-        value="En t’inscrivant, tu comfirmes que tu as au moins au moins 18 ans.">
-            En t’inscrivant, tu comfirmes que tu as au moins au moins 18 ans.</div><br>
-
-            <button class="custom-button">Envoyer</button>
+        <button class="custom-button">Envoyer</button>
         </form>
-    </div><br>
+    </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-<?php get_footer();?>
+<?php get_footer(); ?>
