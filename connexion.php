@@ -41,21 +41,28 @@ get_header();?>
 </nav>
 </nav>
 
-<div class="container">
-        <h1>Connecte-toi!</h1>
-
-    <div class="container">
-        <form action="welcome.php" method="post"></div>
-
-    <div class="container">Nom d'utilisateur ou email</div>
-            <p><input type="text" name="nom d'utilisateur"></p>
-
-    <div class="container">Mot de passe</div> 
-            <p><input type="text" name="mot de passe"></p>
-
-            <button class="custom-button">Se connecter</button>
-        </form>
-    </div><br>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text-center">
+            <?php
+            echo "<h1>Bienvenue au centre !</h1>";
+            echo "<p>Ce contenu est centré grâce à Bootstrap et PHP.</p>";
+            ?>
+            
+            <h1>Connecte-toi!</h1>
+            <form action="welcome.php" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nom d'utilisateur ou email</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <?php get_footer();?>
