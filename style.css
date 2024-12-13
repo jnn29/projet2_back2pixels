@@ -16,6 +16,7 @@ Theme Name: Back2Pixels
 }
 
 .navbar .nav-link {
+  color: white !important; 
   transition: transform 0.3s ease-in-out;
   margin-right: 15px;
   text-transform: uppercase;

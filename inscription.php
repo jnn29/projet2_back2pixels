@@ -36,7 +36,7 @@ get_header();?>
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="text-right">
             
-            <h1><b>INSCRIPTION</b></h1>"
+            <h1><b>INSCRIPTION</b></h1>
 
         <form action="welcome.php" method="post">
             <div class="mb-3">
@@ -61,9 +61,12 @@ get_header();?>
                 </label>
             </div>
 
-            <p class="text-center">Tu as déjà un compte ?<a class="link-opacity-75-hover" href="<?php echo get_permalink(112); ?>"> Se connecter</a></p>
+            <button class="custom-button">S'INSCRIRE</button>
 
-            <button class="custom-button">S'inscrire</button>
+            <p class="text-center mt-4">
+                Tu as déjà un compte ?
+                <a class="link-opacity-75-hover" href="<?php echo get_permalink(112); ?>">Se connecter</a>
+            </p>
 
         </form>
         </div>

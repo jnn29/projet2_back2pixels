@@ -10,6 +10,14 @@ function mon_theme_styles() {
     wp_enqueue_style('mon-theme-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'mon_theme_styles');
+
+function custom_login_form() {
+  ob_start();
+  include 'login.php'; // Le chemin vers ton fichier de connexion
+  return ob_get_clean();
+}
+add_shortcode('login_form', 'custom_login_form');
+
 ?>
  
 <?php
