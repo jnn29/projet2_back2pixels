@@ -25,7 +25,7 @@ get_header(); ?>
                     </li>
                 </ul>
                 <div class="ms-auto">
-                    <button class="custom-button">S'inscrire/se connecter</button>
+                    <a href="<?php echo get_permalink(110); ?>" class="custom-button">S'inscrire/se connecter</a>
                     <button class="custom-button">Créer une annonce</button>
                 </div>
             </div>
@@ -56,7 +56,7 @@ get_header(); ?>
     <div class="container">
         <div class="row gy-5 mb-5">
             <div class="col-6 col-md-3">
-                <h1 style="color: #7058A8;"><br><b>FIL D'ACTUALITÉ</b></br></h1>
+                <h1><br><b>FIL D'ACTUALITÉ</b></br></h1>
             </div>
         </div>
     </div>
