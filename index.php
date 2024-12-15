@@ -77,7 +77,7 @@ get_header(); ?>
                         <span class="ms-2">naruto_lpb</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_1); ?>">
+                    <a href="<?php echo get_permalink(117); ?>">
                         <?php echo get_the_post_thumbnail($article_1->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
