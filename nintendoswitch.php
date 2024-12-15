@@ -42,22 +42,23 @@ get_header();?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/consoles/pspvita.png" 
-                alt="PSPVita" 
+            <img src="<?php echo get_template_directory_uri(); ?>/consoles/nintendo switch.png" 
+                alt="nintendoswitch" 
                 class="img-fluid">
         </div>
 
         <div class="col-md-6">
-                <h1><b>PSP Vita</b></h1>
-                <p>La PSP Vita, c’est la console portable de Sony qui a tenté de révolutionner les jeux sur la route. 
-                    Avec son écran tactile haute définition, ses super graphismes et des jeux comme Uncharted: Golden Abyss ou Persona 4 Golden, elle offrait une expérience quasi console de salon en version portable. 
-                    Malheureusement, elle n’a pas eu le succès qu’elle méritait, mais elle reste une vraie perle pour les fans de jeux portables ! 🎮✨
+                <h1><b>Nintendo Switch</b></h1>
+                <p>
+                    C'est la Nintendo Switch, la console hybride de Nintendo qui cartonne depuis sa sortie. 
+                    Avec ses Joy-Cons détachables et son design portable, tu peux jouer tranquille en mode portable ou la brancher sur la télé pour des sessions plus chill. 
+                    Ici, on voit Fortnite à l'écran, un des jeux les plus populaires. La Switch, c’est la console parfaite pour jouer partout, seul ou entre potes !
                 </p>
 
                 <ul>
-                    <li>PSP Vita</li>
-                    <li>Bon état</li>
-                    <li>Fonctionne</li>
+                    <li>Nintendo Switch</li>
+                    <li>Excellent état</li>
+                    <li>Fonctionne bien</li>
                 </ul>
 
             <div class="text-end">

@@ -42,20 +42,22 @@ get_header();?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/consoles/pspvita.png" 
-                alt="PSPVita" 
+            <img src="<?php echo get_template_directory_uri(); ?>/consoles/nintendods.png" 
+                alt="nintendods" 
                 class="img-fluid">
         </div>
 
         <div class="col-md-6">
-                <h1><b>PSP Vita</b></h1>
-                <p>La PSP Vita, c’est la console portable de Sony qui a tenté de révolutionner les jeux sur la route. 
-                    Avec son écran tactile haute définition, ses super graphismes et des jeux comme Uncharted: Golden Abyss ou Persona 4 Golden, elle offrait une expérience quasi console de salon en version portable. 
-                    Malheureusement, elle n’a pas eu le succès qu’elle méritait, mais elle reste une vraie perle pour les fans de jeux portables ! 🎮✨
+                <h1><b>Nintendo DS</b></h1>
+                <p>
+                    La Nintendo DS, c'est la console portable à double écran qui a marqué les années 2000 ! 
+                    Avec son écran tactile (révolutionnaire à l'époque), tu pouvais jouer à des jeux ultra funs comme Mario Kart DS, Nintendogs ou Pokémon. 
+                    Solide, pliable et pratique à emporter, elle t'offrait des heures de jeu partout, avec des stylets perdus dans chaque recoin de ta maison. 
+                    Une vraie pépite de nostalgie !
                 </p>
 
                 <ul>
-                    <li>PSP Vita</li>
+                    <li>Nintendo DS</li>
                     <li>Bon état</li>
                     <li>Fonctionne</li>
                 </ul>

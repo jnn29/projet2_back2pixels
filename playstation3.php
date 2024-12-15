@@ -42,22 +42,23 @@ get_header();?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/consoles/pspvita.png" 
-                alt="PSPVita" 
+            <img src="<?php echo get_template_directory_uri(); ?>/consoles/playstation3.png" 
+                alt="Playstation3" 
                 class="img-fluid">
         </div>
 
         <div class="col-md-6">
-                <h1><b>PSP Vita</b></h1>
-                <p>La PSP Vita, c’est la console portable de Sony qui a tenté de révolutionner les jeux sur la route. 
-                    Avec son écran tactile haute définition, ses super graphismes et des jeux comme Uncharted: Golden Abyss ou Persona 4 Golden, elle offrait une expérience quasi console de salon en version portable. 
-                    Malheureusement, elle n’a pas eu le succès qu’elle méritait, mais elle reste une vraie perle pour les fans de jeux portables ! 🎮✨
+                <h1><b>Playstation 3</b></h1>
+                <p>La PlayStation 3, ou PS3, c’est la console qui a fait passer le jeu vidéo à un autre niveau avec ses graphismes HD et son lecteur Blu-ray intégré. 
+                    Sortie en 2006, elle a marqué l’époque avec des hits comme GTA V, The Last of Us, Uncharted et Call of Duty. 
+                    En plus, elle offrait le jeu en ligne gratuit avec le PSN. 
+                    Une vraie bête pour les gamers qui voulaient du lourd à la maison !
                 </p>
 
                 <ul>
-                    <li>PSP Vita</li>
-                    <li>Bon état</li>
-                    <li>Fonctionne</li>
+                    <li>Playstation 3</li>
+                    <li>Excellent état</li>
+                    <li>Fonctionne bien</li>
                 </ul>
 
             <div class="text-end">

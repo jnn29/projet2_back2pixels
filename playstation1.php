@@ -42,22 +42,24 @@ get_header();?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/consoles/pspvita.png" 
-                alt="PSPVita" 
+            <img src="<?php echo get_template_directory_uri(); ?>/consoles/playstation1.png" 
+                alt="playstation1" 
                 class="img-fluid">
         </div>
 
         <div class="col-md-6">
-                <h1><b>PSP Vita</b></h1>
-                <p>La PSP Vita, c’est la console portable de Sony qui a tenté de révolutionner les jeux sur la route. 
-                    Avec son écran tactile haute définition, ses super graphismes et des jeux comme Uncharted: Golden Abyss ou Persona 4 Golden, elle offrait une expérience quasi console de salon en version portable. 
-                    Malheureusement, elle n’a pas eu le succès qu’elle méritait, mais elle reste une vraie perle pour les fans de jeux portables ! 🎮✨
+                <h1><b>Playstation 1</b></h1>
+                <p>
+                    La PlayStation 1, ou PS1 pour les intimes, c’est la console qui a fait entrer le jeu vidéo dans une nouvelle ère. 
+                    Sortie en 1994, elle a cartonné avec ses graphismes 3D et ses jeux sur CD, une vraie révolution à l'époque. 
+                    Grâce à des classiques comme Gran Turismo, Resident Evil, Metal Gear Solid et Crash Bandicoot, elle a posé les bases du gaming moderne. 
+                    Une vraie légende pour les gamers old-school !
                 </p>
 
                 <ul>
-                    <li>PSP Vita</li>
+                    <li>Playstation 1</li>
                     <li>Bon état</li>
-                    <li>Fonctionne</li>
+                    <li>Fonctionne super bien</li>
                 </ul>
 
             <div class="text-end">
