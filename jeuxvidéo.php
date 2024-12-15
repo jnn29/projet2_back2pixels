@@ -56,7 +56,7 @@ get_header();?>
                         <span class="ms-2">naruto_lpb</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_1); ?>">
+                    <a href="<?php echo get_permalink(11O); ?>">
                         <?php echo get_the_post_thumbnail($article_1->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -83,7 +83,7 @@ get_header();?>
                         <span class="ms-2">leo29</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_2); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_2->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -110,7 +110,7 @@ get_header();?>
                         <span class="ms-2">cAssandra2004</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_3); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_3->ID, 'medium', [
                             'class' => 'card-img-top'
                      ]); ?>
@@ -137,7 +137,7 @@ get_header();?>
                         <span class="ms-2">blandine87</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_4); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_4->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -153,7 +153,7 @@ get_header();?>
         </div>
     </div>
 
-    <div class="container">MESSAGE
+    <div class="container">
         <div class="row gy-5 mb-5">
             <div class="col-6 col-md-3">
                 <?php 
@@ -168,7 +168,7 @@ get_header();?>
                         <span class="ms-2">meme-lala</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_1); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_1->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -195,7 +195,7 @@ get_header();?>
                         <span class="ms-2">boob07</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_2); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_2->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -222,7 +222,7 @@ get_header();?>
                         <span class="ms-2">filouliloula</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_3); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_3->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -249,7 +249,7 @@ get_header();?>
                         <span class="ms-2">bob29</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_4); ?>">
+                    <a href="<?php echo get_permalink(110); ?>">
                         <?php echo get_the_post_thumbnail($article_4->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>

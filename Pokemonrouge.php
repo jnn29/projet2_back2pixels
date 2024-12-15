@@ -1,11 +1,11 @@
 <?php 
-/* Template Name: Zelda Annonce */
+/* Template Name: Pokemon Rouge Annonce */
 
 get_header(); ?>
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
@@ -37,22 +37,22 @@ get_header(); ?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/Zelda breath of the wild.png" 
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Tetris (1984).png" 
                  alt="Zelda Breath of the Wild" 
                  class="img-fluid">
         </div>
 
         <div class="col-md-6">
-            <h1><b>Zelda Breath of the Wild</b></h1>
+            <h1><b>Pokemon Rouge (1996)</b></h1>
             <p>
-                Dans The Legend of Zelda: Breath of the Wild, Link se réveille après 100 ans de 
-                sommeil dans un Hyrule ravagé par le fléau Ganon. Amnésique, il découvre que la
-                princesse Zelda lutte pour contenir Ganon au Château d’Hyrule. Pour sauver le royaume,
-                Link doit explorer un vaste monde ouvert, retrouver ses souvenirs, maîtriser d’anciennes
-                Créatures Divines, et affronter Ganon pour restaurer la paix.
-            </p>
+            Pokémon Rouge (1996) est un RPG où le joueur incarne un jeune dresseur parcourant la
+            région de Kanto pour capturer et entraîner des Pokémon. L'objectif est de compléter le
+            Pokédex, vaincre les 8 Champions d'Arène, battre la mystérieuse Team Rocket et devenir
+            Maître de la Ligue Pokémon. Avec ses 151 créatures originales, le jeu a marqué le début
+            d’un phénomène mondial. </p>
+
             <ul>
-                <li>SWITCH</li>
+                <li>GAME BOY</li>
                 <li>En bon état</li>
                 <li>Encore avec la cassette</li>
                 <li>Fonctionne bien</li>
@@ -64,12 +64,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
-
-
-
-
-
 
 
 </body>

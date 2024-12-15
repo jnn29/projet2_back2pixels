@@ -4,7 +4,7 @@
 get_header();
 
 if (!is_user_logged_in()) {
-    wp_redirect(wp_login_url()); // Redirige l'utilisateur vers la page de connexion s'il n'est pas connecté
+    wp_redirect(wp_login_url());
     exit();
 }
 
@@ -87,7 +87,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">naruto_lpb</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_1); ?>">
+                    <a href="<?php echo get_permalink(117); ?>">
                         <?php echo get_the_post_thumbnail($article_1->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -114,7 +114,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">leo29</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_2); ?>">
+                    <a href="<?php echo get_permalink(119); ?>">
                         <?php echo get_the_post_thumbnail($article_2->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -141,7 +141,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">cAssandra2004</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_3); ?>">
+                    <a href="<?php echo get_permalink(122); ?>">
                         <?php echo get_the_post_thumbnail($article_3->ID, 'medium', [
                             'class' => 'card-img-top'
                      ]); ?>
@@ -168,7 +168,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">blandine87</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_4); ?>">
+                    <a href="<?php echo get_permalink(124); ?>">
                         <?php echo get_the_post_thumbnail($article_4->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -316,7 +316,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">meme-lala</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_1); ?>">
+                    <a href="<?php echo get_permalink(126); ?>">
                         <?php echo get_the_post_thumbnail($article_1->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -343,7 +343,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">boob07</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_2); ?>">
+                    <a href="<?php echo get_permalink(128); ?>">
                         <?php echo get_the_post_thumbnail($article_2->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -370,7 +370,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">filouliloula</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_3); ?>">
+                    <a href="<?php echo get_permalink(130); ?>">
                         <?php echo get_the_post_thumbnail($article_3->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>
@@ -397,7 +397,7 @@ $current_user = wp_get_current_user();
                         <span class="ms-2">bob29</span>
                     </div>
 
-                    <a href="<?php echo get_permalink($article_4); ?>">
+                    <a href="<?php echo get_permalink(132); ?>">
                         <?php echo get_the_post_thumbnail($article_4->ID, 'medium', [
                             'class' => 'card-img-top'
                         ]); ?>

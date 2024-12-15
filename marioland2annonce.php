@@ -1,11 +1,11 @@
 <?php 
-/* Template Name: Zelda Annonce */
+/* Template Name: Super Mario Land 2 Annonce */
 
 get_header(); ?>
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
@@ -37,22 +37,21 @@ get_header(); ?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/Zelda breath of the wild.png" 
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Super Mario Land 2 (1992).png" 
                  alt="Zelda Breath of the Wild" 
                  class="img-fluid">
         </div>
 
         <div class="col-md-6">
-            <h1><b>Zelda Breath of the Wild</b></h1>
-            <p>
-                Dans The Legend of Zelda: Breath of the Wild, Link se réveille après 100 ans de 
-                sommeil dans un Hyrule ravagé par le fléau Ganon. Amnésique, il découvre que la
-                princesse Zelda lutte pour contenir Ganon au Château d’Hyrule. Pour sauver le royaume,
-                Link doit explorer un vaste monde ouvert, retrouver ses souvenirs, maîtriser d’anciennes
-                Créatures Divines, et affronter Ganon pour restaurer la paix.
-            </p>
+            <h1><b>Super Mario Land 2 (1992)</b></h1>
+            <p>Dans Super Mario Land 2: 6 Golden Coins (1992), Mario découvre que Wario a pris le
+                contrôle de son château et hypnotisé les habitants de Mario Land. Pour le récupérer,
+                Mario doit collecter les 6 pièces d'or réparties dans des zones uniques, chacune gardée
+                par un boss. Après avoir vaincu ses ennemis, Mario affronte Wario pour restaurer la paix
+                dans son royaume.</p>
+
             <ul>
-                <li>SWITCH</li>
+                <li>GAME BOY</li>
                 <li>En bon état</li>
                 <li>Encore avec la cassette</li>
                 <li>Fonctionne bien</li>
@@ -64,12 +63,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
-
-
-
-
-
 
 
 </body>
