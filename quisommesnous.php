@@ -2,15 +2,15 @@
 /* header */
 
 get_header();?>
-
+ 
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #7058A8;">
-    <div class="container">
+        <div class="container">
       
-        <a class="navbar-brand" href="index.php">
-        <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
-            alt="Logo" width="60" height="48">
-        </a>
+            <a class="navbar-brand" href="index.php">
+                <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
+                    alt="Logo" width="60" height="48">
+            </a>
 
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -151,7 +151,7 @@ get_header();?>
                 qui compte vraiment : le plaisir de 
                 découvrir de nouveaux jeux et de faire des
                 rencontres dans un environnement sûr.</p>           
-    </div>
+        </div>
     </div>
     </div>
 </body>
