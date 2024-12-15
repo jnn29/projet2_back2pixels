@@ -34,7 +34,7 @@ $current_user = wp_get_current_user();
                     </li>
                 </ul>
                 <div class="ms-auto">
-                    <i class="bi bi-person-fill"></i>
+                     <i class="bi bi-person-fill"></i>
                     <button class="custom-button">Créer une annonce</button>
                 </div>
             </div>
@@ -96,7 +96,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                         <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                         <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                         <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                         <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                         <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                         <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -264,7 +264,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                         <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -291,7 +291,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                         <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -325,7 +325,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                         <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -352,7 +352,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                         <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -379,7 +379,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                         <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -406,7 +406,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                         <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -439,7 +439,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_1); ?></h5>
                         <p><?php echo wp_trim_words($article_1->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_1); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -466,7 +466,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_2); ?></h5>
                         <p><?php echo wp_trim_words($article_2->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_2); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -493,7 +493,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_3); ?></h5>
                         <p><?php echo wp_trim_words($article_3->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_3); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -520,7 +520,7 @@ $current_user = wp_get_current_user();
                     <div class="card-body">
                         <h5 class="card-title"><?php echo get_the_title($article_4); ?></h5>
                         <p><?php echo wp_trim_words($article_4->post_content, 20); ?></p>
-                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">EN SAVOIR PLUS</a>
+                        <a href="<?php echo get_permalink($article_4); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
