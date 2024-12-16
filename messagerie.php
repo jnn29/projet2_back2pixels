@@ -38,46 +38,33 @@ get_header();?>
         </div>
     </nav>
 
-    <div class="container my-5 d-flex">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+    <script src="script.js"></script>
 
-    <div class="flex-shrink-0" style="width: 200px;">
-        <h1>PROFILS</h1>
-        <ul class="list-group">
-            <li class="list-group-item">naruto_lpb</li>
-            <li class="list-group-item">leo29</li>
-            <li class="list-group-item">cAssandra2004</li>
-            <li class="list-group-item">blandine87</li>
-        </ul>
-    </div>
+  <div id="profiles" class="profiles-container col-lg-4">
+    <div class="profile">naruto_lpb</div>
+    <div class="profile">leo29</div>
+    <div class="profile">cAssandra2004</div>
+  </div>
 
-    <div class="flex-grow-1 ms-4">
-        <h1 class="text-right">MESSAGES</h1>
-        <div id="chatBox" class="border p-3" style="height: 300px; overflow-y: auto;"></div>
-
-        <div class="my-2">
-            <label for="messageInput" class="form-label"></label>
-            <div class="input-group">
-                <input type="text" id="messageInput" class="form-control" placeholder="Tapez votre message...">
-                <button id="sendMessage" class="custom-button">Envoyer</button>  
-            </div>
+    <div class="col-lg-8">
+        <div class="chat-container">
+        <div class="messages" id="messages"></div>
         </div>
         </div>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $('#sendMessage').on('click', function() {
-            let message = $('#messageInput').val();
-            if (message.trim() !== "") {
-                $('#chatBox').append(`<p>${message}</p>`);
-                $('#messageInput').val('');
-                $('#chatBox').scrollTop($('#chatBox')[0].scrollHeight);
-            }
-        });
-    });
-</script>
+  <div id="profiles" class="profiles-container"></div>
+  <div id="messages" class="messages-container">
+  
+  </div>
+  <div class="input-group">
+    <input type="text" id="messageInput" class="form-control" placeholder="Écrivez un message...">
+    <button class="custom-button">Envoyer</button>
+  </div>
+  <script src="script.js"></script>
 
 </body>
+
 <?php get_footer(); ?>

@@ -184,3 +184,39 @@ h1{
     background-color: #0056b3;
   }
   
+  .chat-container {
+      display: flex;
+      height: 100vh;
+  }
+  .profile-list {
+      width: 25%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+  }
+  .chat-box {
+      width: 75%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+  .message-box {
+      flex-grow: 1;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  .message {
+      margin-bottom: 10px;
+  }
+  .custom-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  .custom-button:hover {
+      background-color: #0056b3;
+  }

@@ -8,7 +8,7 @@ get_header();?>
     <div class="container">
       
         <a class="navbar-brand" href="index.php">
-        <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
+            <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
             alt="Logo" width="60" height="48">
         </a>
 
