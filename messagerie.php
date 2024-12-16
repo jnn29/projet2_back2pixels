@@ -11,6 +11,7 @@ get_header();?>
                     alt="Logo" width="60" height="48">
             </a>
 
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,6 +47,9 @@ get_header();?>
             <li class="list-group-item">leo29</li>
             <li class="list-group-item">cAssandra2004</li>
             <li class="list-group-item">blandine87</li>
+            <li class="list-group-item">orithian</li>
+            <li class="list-group-item">azdar</li>
+            <li class="list-group-item">monhero00</li>
         </ul>
     </div>
 
