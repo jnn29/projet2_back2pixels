@@ -35,40 +35,35 @@ get_header();?>
 
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="text-right">
-            
-            <h1><b>INSCRIPTION</b></h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><h5>NOM D'UTILISATEUR</h5></label>
+                    <input type="username" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp">
+                </div>
 
-        <form action="welcome.php" method="post">
-            <div class="mb-3">
-                <label for="username" class="form-label">Nom d'utilisateur</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
-            </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><h5>E-MAIL</h5></label>
+                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="MailHelp">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"><h5>Password</h5></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-            </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">En t’inscrivant, tu confirmes que tu as au moins 18 ans.</label>
+                </div>
 
-            <div class="mb-3">
-                <label for="password" class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
-            </div>
+                <a href="<?php echo get_permalink(115); ?>" class="custom-button">S'INSCRIRE</a>
 
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" id="confirmation" name="confirmation" value="oui" required>
-                <label class="form-check-label" for="confirmation">
-                    En t’inscrivant, tu confirmes que tu as au moins 18 ans.
-                </label>
-            </div>
-
-            <button class="custom-button">S'INSCRIRE</button>
-
-            <p class="text-center mt-4">
+                <p class="text-center mt-4">
                 Tu as déjà un compte ?
                 <a class="link-opacity-75-hover" href="<?php echo get_permalink(112); ?>">Se connecter</a>
-            </p>
+                </p>
 
-        </form>
+            </form>
         </div>
     </div>
 

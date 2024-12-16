@@ -30,12 +30,12 @@ $current_user = wp_get_current_user();
                         <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(158); ?>">Consoles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(103); ?>">Qui sommes-nous</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(160); ?>">Qui sommes-nous</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
-                     <i class="bi bi-person-fill"></i>
-                    <button class="custom-button">Créer une annonce</button>
+                <div class="ms-auto gx-3">
+                    <a href="<?php echo get_permalink(162); ?>" class="text-white me-3"><i class="bi bi-person-fill footer-icon"></i></a>
+                    <a href="<?php echo get_permalink(164); ?>" class="custom-button">Créer une annonce</a>
                 </div>
             </div>
         </div>

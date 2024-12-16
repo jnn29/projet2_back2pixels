@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Qui Sommes Nous */
+/* Template Name: Qui Sommes Nous Logged In */
 
 get_header();?>
 
@@ -7,7 +7,7 @@ get_header();?>
     
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
+            <a class="navbar-brand" href="<?php echo get_permalink(115); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -16,24 +16,24 @@ get_header();?>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(156); ?>">Jeux vidéo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(158); ?>">Consoles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(103); ?>">Qui sommes-nous</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
-                    <button class="custom-button">S'inscrire/se connecter</button>
+                <div class="ms-auto gx-3">
+                    <a href="" class="text-white me-3"><i class="bi bi-person-fill footer-icon"></i></a>
                     <button class="custom-button">Créer une annonce</button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h1><b>BACK2PIXELS C’EST QUOI ?</b></h1>
@@ -54,7 +54,7 @@ get_header();?>
             </div> 
 
             <div class="col-md-6">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/qsn 1.png" 
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/Perso/Pers1.png'); ?>" 
                     alt="Pers1" width="270" height="360" class="img-fluid">
             </div>
         </div>
@@ -63,7 +63,7 @@ get_header();?>
 
 
 
-    <div class="container my-3">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/Perso/Pers2.png'); ?>" 
@@ -92,7 +92,7 @@ get_header();?>
         </div>
     </div>
 
-    <div class="container my-3">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h1><b>NOTRE HISTOIRE</b></h1>
@@ -125,7 +125,7 @@ get_header();?>
         </div>
     </div>
 
-    <div class="container mt-3 mb-5">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/Perso/Pers4.png'); ?>" 

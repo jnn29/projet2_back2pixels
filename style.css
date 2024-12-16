@@ -77,6 +77,11 @@ Theme Name: Back2Pixels
   margin-right: 10px;
 }
 
+.text-shadow-light {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
 h1{
   font-family: "Jersey 20", sans-serif;
   font-style: normal;
@@ -94,6 +99,12 @@ h5{
 
 p{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+mark{
+  background-color: #7058A8 ;
+  border-radius: 5px;
+  padding: 0 3px;
 }
 
 

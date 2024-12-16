@@ -7,7 +7,7 @@ get_header(); ?>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
+                <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 1.svg" alt="Logo" width="70" height="58">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -36,18 +36,18 @@ get_header(); ?>
     <div class="container mt-3">
         <div class="row align-items-center">
             <div class="col-12 position-relative">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/panorama.png" 
+                <img src="<?php echo get_template_directory_uri(); ?>/images/panorama 2.png" 
                     alt="gensquijouent" 
                     class="img-fluid" 
                     style="border-radius: 20px;">
-                <div class="position-absolute top-0 start-0 p-3 text-white" style="padding-left: 40px; margin-left: 40px;">
-                    <h1>BIENVENUE SUR BACK2PIXELS</h1>
-                    <p><b>Échanges tes jeux vidéo et consoles facilement avec d'autres</b></p>
-                    <p><b>passionnés. Simple, rapide et sécurisé, rejoint notre</b></p>
-                    <p><b>communauté et redonne vie à tes jeux !</b></p>
-                    <p><b>T'es prêt ? À toi de jouer !</b></p>
-                    <a href="<?php echo get_permalink(110); ?>" class="custom-button">Créer une annonce</a>
-                </div>
+                    <div class="position-absolute top-0 start-50 translate-middle-x text-center text-white p-3">
+                    <h1 class="text-shadow-light"><b>BIENVENUE SUR BACK2PIXELS</b></h1>
+                    <p class="text-shadow-light"><b>Échanges tes jeux vidéo et consoles facilement avec d'autres passionnés. Rejoint notre communauté !</b></p>
+                    <p class="text-shadow-light"><b>T'es prêt ? À toi de jouer !</b></p>
+
+                        <a href="<?php echo get_permalink(110); ?>" class="custom-button">Créer une annonce</a>
+                    </div>
+
             </div>
         </div>
     </div>
