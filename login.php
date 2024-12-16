@@ -4,8 +4,32 @@
 get_header();?>
 
 
+<?php
+session_start();
+
+
+define('USERNAME', 'lala'); 
+define('PASSWORD', '123'); 
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+
+    if ($username === USERNAME && $password === PASSWORD) {
+        $_SESSION['user'] = USERNAME;
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        $error = "Nom d'utilisateur ou mot de passe incorrect.";
+    }
+}
+?>
+
 <body>
-<nav class="navbar navbar-expand-lg">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
@@ -32,35 +56,9 @@ get_header();?>
             </div>
         </div>
     </nav>
-</body>
 
 
-<?php
-session_start();
-
-
-define('USERNAME', 'jinanecharline'); 
-define('PASSWORD', 'onesttropcool'); 
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
-
-
-    if ($username === USERNAME && $password === PASSWORD) {
-        $_SESSION['user'] = USERNAME;
-        header("Location: dashboard.php");
-        exit();
-    } else {
-        $error = "Nom d'utilisateur ou mot de passe incorrect.";
-    }
-}
-?>
-
-<body>
-
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container my-5 d-flex justify-content-center align-items-center">
         <div class="text-right">
             <h1>Connecte-toi !</h1>
 

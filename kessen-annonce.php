@@ -1,11 +1,11 @@
 <?php 
-/* Template Name: Zelda Annonce */
+/* Template Name: Kessen Annonce */
 
 get_header(); ?>
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" width="60" height="48">
@@ -37,22 +37,22 @@ get_header(); ?>
     <div class="row my-5">
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/Zelda breath of the wild.png" 
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Kessen.png" 
                  alt="Zelda Breath of the Wild" 
                  class="img-fluid">
         </div>
 
         <div class="col-md-6">
-            <h1><b>Zelda Breath of the Wild</b></h1>
-            <p>
-                Dans The Legend of Zelda: Breath of the Wild, Link se réveille après 100 ans de 
-                sommeil dans un Hyrule ravagé par le fléau Ganon. Amnésique, il découvre que la
-                princesse Zelda lutte pour contenir Ganon au Château d’Hyrule. Pour sauver le royaume,
-                Link doit explorer un vaste monde ouvert, retrouver ses souvenirs, maîtriser d’anciennes
-                Créatures Divines, et affronter Ganon pour restaurer la paix.
-            </p>
+            <h1><b>Kessen (2000)</b></h1>
+            <p>Kessen (2000) est un jeu de stratégie en temps réel se déroulant durant la période
+                des Trois Royaumes en Chine, basé sur des événements historiques. Le joueur prend le
+                rôle de l'un des grands chefs militaires, comme Liu Bei, Cao Cao ou Sun Quan, et dirige
+                des armées dans des batailles épiques pour unifier le pays. Le jeu combine des éléments
+                de stratégie tactique et de combats de grande échelle, avec des cinématiques immersives
+                et un gameplay dynamique.</p>
+
             <ul>
-                <li>SWITCH</li>
+                <li>PlayStaTion 2</li>
                 <li>En bon état</li>
                 <li>Encore avec la cassette</li>
                 <li>Fonctionne bien</li>
@@ -64,12 +64,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
-
-
-
-
-
 
 
 </body>
