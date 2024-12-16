@@ -74,6 +74,10 @@ get_header();?>
                 $('#chatBox').append(`<p>${message}</p>`);
                 $('#messageInput').val('');
                 $('#chatBox').scrollTop($('#chatBox')[0].scrollHeight);
+        setTimeout(function() {
+            $('#chatBox').append(`<p><strong>naruto_lpb:</strong> Merci pour votre message, nous reviendrons vers vous bientôt !</p>`);
+            $('#chatBox').scrollTop($('#chatBox')[0].scrollHeight);
+            }, 2000);
             }
         });
     });
