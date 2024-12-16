@@ -47,6 +47,9 @@ get_header();?>
             <li class="list-group-item">leo29</li>
             <li class="list-group-item">cAssandra2004</li>
             <li class="list-group-item">blandine87</li>
+            <li class="list-group-item">orithian</li>
+            <li class="list-group-item">azdar</li>
+            <li class="list-group-item">monhero00</li>
         </ul>
     </div>
 
