@@ -1,11 +1,6 @@
 <?php
 get_header();?>
 
-<?php
-    $article_3_id = 123;
-    $avatar_url = 'https://robohash.org/' . $article_3_id;
-?>
-
 <body>
 
     <nav class="navbar navbar-expand-lg" style="background-color: #7058A8;">
