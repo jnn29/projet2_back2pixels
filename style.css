@@ -4,7 +4,7 @@ Theme Name: Back2Pixels
 
 
 .navbar {
-    background-color: #7058A8;
+    background-color: transparent;
     font-family: "Jersey 20", sans-serif;
     font-size:large;
     font-weight: 400;
@@ -16,7 +16,7 @@ Theme Name: Back2Pixels
 }
 
 .navbar .nav-link {
-  color: white !important; 
+  color: #f0f0f0 !important; 
   transition: transform 0.3s ease-in-out;
   margin-right: 15px;
   text-transform: uppercase;
@@ -39,11 +39,11 @@ Theme Name: Back2Pixels
 }
 
 .navbar-toggler {
-  background-color: #7058A8;
+  background-color: transparent !important;
 }
 
 .navbar-toggler-icon {
-  background-color: #76BBB0;
+  background-color: white;
   padding: 5px;
   border-radius: 3px;
 }
@@ -77,10 +77,6 @@ Theme Name: Back2Pixels
   margin-right: 10px;
 }
 
-.text-shadow-light {
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
 
 h1{
   font-family: "Jersey 20", sans-serif;
@@ -100,13 +96,6 @@ h5{
 p{
   font-family: Arial, Helvetica, sans-serif;
 }
-
-mark{
-  background-color: #7058A8 ;
-  border-radius: 5px;
-  padding: 0 3px;
-}
-
 
 .img-thumbnail {
   vertical-align: middle;

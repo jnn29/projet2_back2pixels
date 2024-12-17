@@ -4,7 +4,8 @@
 get_header(); ?>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+
+    <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_permalink(105); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 1.svg" alt="Logo" width="70" height="58">
@@ -15,13 +16,13 @@ get_header(); ?>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a>
+                        <a class="nav-link active" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a>
+                        <a class="nav-link active" href="<?php echo get_permalink(68); ?>">Consoles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo get_permalink(103); ?>">Qui sommes-nous</a>
+                        <a class="nav-link active" href="<?php echo get_permalink(103); ?>">Qui sommes-nous</a>
                     </li>
                 </ul>
                 <div class="ms-auto">
@@ -33,24 +34,19 @@ get_header(); ?>
     </nav>
 
 
-    <div class="container mt-3">
-        <div class="row align-items-center">
-            <div class="col-12 position-relative">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/panorama 2.png" 
-                    alt="gensquijouent" 
-                    class="img-fluid" 
-                    style="border-radius: 20px;">
-                    <div class="position-absolute top-0 start-50 translate-middle-x text-center text-white p-3">
-                    <h1 class="text-shadow-light"><b>BIENVENUE SUR BACK2PIXELS</b></h1>
-                    <p class="text-shadow-light"><b>Échanges tes jeux vidéo et consoles facilement avec d'autres passionnés. Rejoint notre communauté !</b></p>
-                    <p class="text-shadow-light"><b>T'es prêt ? À toi de jouer !</b></p>
+    <div class="position-relative">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/nav.png" 
+            alt="gensquijouent" 
+            class="img-fluid w-100" 
+            style="border-radius: 0;">
 
-                        <a href="<?php echo get_permalink(110); ?>" class="custom-button">Créer une annonce</a>
-                    </div>
-
-            </div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
+            <h1 class="display-3 display-md-1"><b>BACK2PIXELS</b></h1>
+            <p class="lead lead-md"><b>T'es prêt ? À toi de jouer !</b></p>
         </div>
     </div>
+
+
 
     <div class="container">
         <div class="row gy-5 mb-5">
@@ -61,7 +57,6 @@ get_header(); ?>
     </div>
     
 
-        
     <div class="container">
         <div class="row gy-5 mb-5">
             <div class="col-6 col-md-3">
