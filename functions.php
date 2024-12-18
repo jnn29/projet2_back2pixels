@@ -6,6 +6,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('menus'); 
 
 
+
 function mon_theme_styles_scripts() {
 
     wp_enqueue_style(
@@ -70,5 +71,69 @@ function mytheme_add_page_template_support() {
     add_theme_support('page-attributes');
 }
 add_action('after_setup_theme', 'mytheme_add_page_template_support');
+
+
+
+
+
+
+function create_account(){
+	//You may need some data validation here
+	$user = ( isset($_POST['uname']) ? $_POST['uname'] : '' );
+	$pass = ( isset($_POST['upass']) ? $_POST['upass'] : '' );
+	$email = ( isset($_POST['uemail']) ? $_POST['uemail'] : '' );
+
+	if ( !username_exists( $user )  && !email_exists( $email ) ) {
+		$user_login = wp_slash( $user );
+		$user_email = wp_slash( $email );
+		$user_pass = $pass;
+
+		$userdata = compact('user_login', 'user_email', 'user_pass');
+		$user_id = wp_insert_user($userdata);
+
+		if( !is_wp_error($user_id) ) {
+			// user has been created
+			$user = new WP_User( $user_id );
+			$user->set_role( 'contributor' ); // type d'user que je veux a ce moment la
+			// redirection après connexion
+			wp_redirect(esc_url(home_url('/homepage')));
+			exit;
+		} else {
+			//$user_id is a WP_Error object. Manage the error
+		}
+	}
+}
+add_action('init', 'create_account');
+
+
+
+
+
+function tf_check_user_role( $roles ) {
+	// si pas connecté alors je sors de la function
+	if ( !is_user_logged_in() ) {
+		return;
+	}
+
+	// je récupère les information de la personne connectée
+	$user = wp_get_current_user();
+	// je récupère les roles
+	$currentUserRoles = $user->roles;
+	// je compare le tableaux de roles de mon user et celui que j'ai envie de comparer pour voir si y a des matches
+	$isMatching = array_intersect( $currentUserRoles, $roles);
+	$response = false; // par défaux je suis a false
+
+	// si y a matche alors je mets a true
+	if ( !empty($isMatching) ) {
+		$response = true;
+	}
+
+	// je retourne le résulatat
+	return $response;
+}
+$roles = [ 'contributor' ];
+if ( tf_check_user_role($roles) ) {
+	add_filter('show_admin_bar', '__return_false');
+}
 
 ?>
