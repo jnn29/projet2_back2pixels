@@ -96,7 +96,7 @@ function create_account(){
 			$user = new WP_User( $user_id );
 			$user->set_role( 'contributor' ); // type d'user que je veux a ce moment la
 			// redirection après connexion
-			wp_redirect(esc_url(home_url('/homepage')));
+			wp_redirect(esc_url(home_url('/dashboard')));
 			exit;
 		} else {
 			//$user_id is a WP_Error object. Manage the error
@@ -107,33 +107,3 @@ add_action('init', 'create_account');
 
 
 
-
-
-function tf_check_user_role( $roles ) {
-	// si pas connecté alors je sors de la function
-	if ( !is_user_logged_in() ) {
-		return;
-	}
-
-	// je récupère les information de la personne connectée
-	$user = wp_get_current_user();
-	// je récupère les roles
-	$currentUserRoles = $user->roles;
-	// je compare le tableaux de roles de mon user et celui que j'ai envie de comparer pour voir si y a des matches
-	$isMatching = array_intersect( $currentUserRoles, $roles);
-	$response = false; // par défaux je suis a false
-
-	// si y a matche alors je mets a true
-	if ( !empty($isMatching) ) {
-		$response = true;
-	}
-
-	// je retourne le résulatat
-	return $response;
-}
-$roles = [ 'contributor' ];
-if ( tf_check_user_role($roles) ) {
-	add_filter('show_admin_bar', '__return_false');
-}
-
-?>

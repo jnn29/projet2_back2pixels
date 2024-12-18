@@ -9,7 +9,7 @@ include_once  'includes/randomName.php';
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
-                <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 1.svg" alt="Logo" width="70" height="58">
+                <img src="<?php echo get_template_directory_uri(); ?>/!!" alt="Logo" width="70" height="58">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@ include_once  'includes/randomName.php';
 
 
     <div class="position-relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/nav.png" 
+        <img src="<?php echo get_template_directory_uri(); ?>/images/Sans titre (1).png" 
             alt="gensquijouent" 
             class="img-fluid w-100" 
             style="border-radius: 0;">

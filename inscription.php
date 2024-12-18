@@ -2,12 +2,11 @@
 /* Template Name: Inscription */
 
 if (!is_user_logged_in()) {
-    wp_redirect( home_url('/dashboard') );
+    wp_redirect( home_url('/') );
       exit;
   }
   
   get_header();
-  // attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
   ?>
   
     <div class="container my-5">
@@ -55,6 +54,12 @@ if (!is_user_logged_in()) {
         <div class="d-grid">
             <button type="submit" class="custom-button">S'inscrire</button>
         </div>
+
+                <p class="text-center mt-4">
+                Tu as déjà un compte ?
+                <a  href="<?php echo esc_url(get_permalink(get_page_by_path('/connexion'))); ?>" class="link-opacity-75-hover">Se connecter</a>
+                </p>
+
     </form>
     </div>
 

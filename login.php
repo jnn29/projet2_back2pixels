@@ -3,7 +3,7 @@
 
 if (!is_user_logged_in()) {
   // si je suis déjà connecté je suis redirigé vers la page home
-  wp_redirect( home_url('/dashboard') );
+  wp_redirect( home_url('/') );
 	exit;
 }
 get_header();
@@ -37,7 +37,6 @@ get_header();
             </div>
         </div>
     </nav>
-
 
 <div class="container my-5">
     <form action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post" class="mx-auto" style="max-width: 400px;">
@@ -79,7 +78,7 @@ get_header();
         <input 
             type="hidden" 
             name="redirect_to" 
-            value="<?php echo esc_url( home_url('/') ); ?>">
+            value="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>">
     </form>
 </div>
 
