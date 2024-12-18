@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 664.62 293.54">
-  <g id="Calque_1-2" data-name="Calque 1">
-    <image width="120" height="53" transform="scale(5.54)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAA2CAYAAADj9DbwAAAACXBIWXMAAAH/AAAB/wE6MCGZAAAEgUlEQVR4nO2czU1jMRDHzQrpXaJccqAAlE4ogCJSA1IqiEQNKYIC6ASlgBz2EuWSE3sa5Djjmf+M/d5zFv+kFUt4tud5Pv0BIXQ6nU6n0+l0Op1OB+TB2uDt8+Nbe+b95fWmX6Rdrq1FjrHac8+nz2rviMpWG9OgqKIIeilru7S9VQaLopB+pHbWd5xD0fCA8Usstl/is+fd+uYzrU2ufc5bcv1RW8nLasmfPif1K73T2PxBHoonNn2Rv89PP/8Ii0I54nFi5WgK5mRO/4+09chvaeONbF4evQ1jpaafrQ7HcNmfwrBZqm04Vofj1fdvnx/fnPWz/UXjppPJGWhu/MX2i/XouM0A9pvOA8k2lUernsx5j6Ys+vllf3IJRZEhbl9q/an80jtw46MgCp4aKFzHoN6IMGyWP5OwOhxvPJijNJTWlF/ruwUFh+BQ8hh4JiOe0NQ4ch7IKZgMbdgsYUMj7kHBIYA5mV5G8oLV4Wj2Es0r04kqLei0/rXPc3gUPGWFLXoykgfTkJvizcsSnDGh3ixx3q3ZYssqizZ2k0uoHKUhKV5+xcUQhU3Ec+cMi1Lkyil6js2QJnJyCjd56EZDCbQ+r50WiLm2Nd3r5BrEXnjZn67yOn0dkjY3Bdf2ePV9/HNurY4SK1ozIkoVqXGWjF8T0ZPJ8ihXxZUoKjz6HE2UJbfmwj1K3HfJMguNJFPvdBFquB4zxCDhcdgsi8MnKSE1IMr7nILJaDQFxkY8VeFpBcrJmqJr5jBtJ8oKEgm8/ccKloyh5s6dBzgnv7+8PnACloQ55PmcAXFpQFrPn3frsNh+sev5nByefOrZLxgbU+FlPTstLTqGzfKnsKoxcefdGg6fHtnJkDguycHJlOfQrobooUULlaUGKf0eZA3Bp2z39R+rgq15O85x0gUBdP08xtqX+kcuFEggspVcOjBthniOHb2gSindCKm1keJBu4SRu4hhLd5G2QyRQp/FKKSNEOTndIEgZ5TeSw3c+JpsGrmxrz7P5HUN2JPnyMNokZRbB4cwTdTxoMllOfLUgDx5zDBNRoEcZ0po+Tk3bukzFriKmjsXP+/WIWyP6nIM9eaq4bqFCjU3MR7jmeJQRBt3dTgWjwWH6zHCNLetWAIXtrk97RaMUZI1lVeaH6QIUz0Z6SQ9DUpBLbGGMrSwbelT8n5rYWUlDeP0Th6vNofrmsXLGIUQTUYubLdy/BdCpDClwOSuARPVcrIWTjVlWa2+xhmwdmtjjsIrFxVpnLFOrEQlp0KN4XljeFVLS6UcnONcnp+uFI4cdiAV9qw3Q2qSizYltzY8vzOFtI3bSb/FQV9LjbbJO15WpDAtbZS0hnSJoYT/xpNDsFfnmjeX1BpaZc6db8e3VWty90pGT3ByFwYu+1NYjCWck9rbxbCSpypm4iLCctqiebF123MK0CVUaXEqVmVz3Eey/omG3w6yToau5M5JCzLcO7NeyUVpQYYWqXqePNUkS+OUyvD+8vrQqrF45LK0afKlfzulf76q0+l0Op1Op9PpdDpu/gEDROFeiZNYIgAAAABJRU5ErkJggg=="/>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 664.6 293.5">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1-2">
+    <image class="cls-1" width="121" height="54" transform="translate(3.4) scale(5.4)" xlink:href="Fichier 4-1.png"/>
   </g>
 </svg>
