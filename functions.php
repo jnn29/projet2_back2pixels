@@ -57,4 +57,29 @@ function mon_theme_register_menus() {
 }
 add_action('after_setup_theme', 'mon_theme_register_menus');
 
+
+function tf_check_user_role( $roles ) {
+	
+	if ( !is_user_logged_in() ) {
+		return;
+	}
+
+	$user = wp_get_current_user();
+	
+	$currentUserRoles = $user->roles;
+	
+	$isMatching = array_intersect( $currentUserRoles, $roles);
+	$response = false; 
+
+	if ( !empty($isMatching) ) {
+		$response = true;
+	}
+
+	return $response;
+}
+$roles = [ 'contributor' ];
+if ( tf_check_user_role($roles) ) {
+	add_filter('show_admin_bar', '__return_false');
+}
+
 ?>
