@@ -25,34 +25,36 @@ include_once  'includes/randomName.php';
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video'))); ?>" class="nav-link active">Jeux vidéo</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/'))); ?>" class="nav-link active">Jeux vidéo</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles'))); ?>" class="nav-link active">Consoles</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/'))); ?>" class="nav-link active">Consoles</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous'))); ?>" class="nav-link active">Qui sommes-nous</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/'))); ?>" class="nav-link active">Qui sommes-nous</a>
                     </li>
                 </ul>
                 <div class="ms-auto">
-                    <?php if (is_user_logged_in()): // si je suis connecté ?>
+                    <?php if (is_user_logged_in()):?>
                     <a href="<?php echo wp_logout_url();?>" class="custom-button">Déconnexion</a>
                     <?php endif; ?>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">Créer une annonce</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/creer-une-annonce'))); ?>" class="custom-button">Créer une annonce</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <div class="position-relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/Sans titre (1).png" 
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hero.png" 
             alt="gensquijouent" 
             class="img-fluid w-100" 
             style="border-radius: 0;">
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>BACK2PIXELS</b></h1>
-            <p class="lead lead-md">Échangez vos jeux vidéo préférés et découvrez de nouvelles aventures sans dépenser un centime !</p>
+            <p class="lead lead-md">Le site où vos jeux et consoles trouvent une nouvelle vie : échangez facilement et connectez-vous avec des passionnés comme vous !</p>
+            <p class="lead lead-md"><b>T’es prêt ? À toi de jouer !</b></p>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">CRÉER UNE ANNONCE</a>
         </div>
     </div>
 

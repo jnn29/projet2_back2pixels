@@ -5,7 +5,7 @@ include_once  'includes/randomName.php';
 ?>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
+<nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/!!" alt="Logo" width="70" height="58">
@@ -16,26 +16,25 @@ include_once  'includes/randomName.php';
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video'))); ?>" class="nav-link active">Jeux vidéo</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video'))); ?>" class="nav-link active">JEUX VIDÉO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles'))); ?>" class="nav-link active">Consoles</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles'))); ?>" class="nav-link active">CONSOLES</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous'))); ?>" class="nav-link active">Qui sommes-nous</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous'))); ?>" class="nav-link active">QUI SOMMES-NOUS</a>
                     </li>
                 </ul>
                 <div class="ms-auto">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">S'inscrire/Se connecter</a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">Créer une annonce</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">S'INSCRIRE/SE CONNECTER</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">CRÉER UNE ANNONCE</a>
                 </div>
             </div>
         </div>
     </nav>
 
-
     <div class="position-relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/Sans titre (1).png" 
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hero.png" 
             alt="gensquijouent" 
             class="img-fluid w-100" 
             style="border-radius: 0;">
@@ -48,13 +47,7 @@ include_once  'includes/randomName.php';
 
 </body>
 
-<div class="container">
-        <div class="row gy-5 mb-5">
-            <div class="col-6 col-md-3">
-                <h1><br><b><?php the_title(); ?></b></br></h1>
-            </div>
-        </div>
-    </div>
+
     <?php
         $games = new WP_Query([
         'post_type' => 'games',
@@ -65,8 +58,8 @@ include_once  'includes/randomName.php';
         $i = 1;
     ?>
 
-    <div class="container">
-        <div class="row gy-5 mb-5">
+    <div class="container my-5">
+        <div class="row gy-5">
         <?php while ($games->have_posts()) : $games->the_post(); ?>
             <div class="col-6 col-md-3">
                 <div class="card" style="max-width: 250px; margin: 0 auto;">
@@ -95,7 +88,7 @@ include_once  'includes/randomName.php';
         <?php $i++; endwhile; ?>
         </div>
     </div>
-</div>
+
 
 </div>
 <?php endif; ?>
