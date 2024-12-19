@@ -32,8 +32,12 @@
 
             <div class="col-12 col-md-3 mb-4">
                 <h5>SUIVEZ-NOUS</h5>
-                <a href="https://fr-fr.facebook.com/" class="text-white me-3"><i class="bi bi-facebook footer-icon"></i></a>
-                <a href="https://www.instagram.com/" class="text-white"><i class="bi bi-instagram footer-icon"></i></a>
+                <a class="text-white me-3" onclick="window.open('//fr-fr.facebook.com/', '_blank')">
+                    <i class="bi bi-facebook footer-icon"></i>
+                </a>
+                <a class="text-white" onclick="window.open('//www.instagram.com/', '_blank')">
+                    <i class="bi bi-instagram footer-icon"></i>
+                </a>
             </div>
         </div>
 

@@ -10,7 +10,7 @@ include_once  'includes/randomName.php';
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
-                <img src="<?php echo get_template_directory_uri(); ?>/!!" alt="Logo" width="70" height="58">
+                <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -43,11 +43,39 @@ include_once  'includes/randomName.php';
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>BACK2PIXELS</b></h1>
-            <p class="lead lead-md">Le site où vos jeux et consoles trouvent une nouvelle vie : échangez facilement et connectez-vous avec des passionnés comme vous !</p>
+            <p class="lead lead-md">Le site où tes jeux et consoles trouvent une nouvelle vie : échange facilement et connecte-toi avec des passionnés comme toi !</p>
             <p class="lead lead-md"><b>T’es prêt ? À toi de jouer !</b></p>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">CRÉER UNE ANNONCE</a>
         </div>
     </div>
+
+
+    <div class="container mt-5">
+        <div class="row gy-3">
+            <div class="col-md-6">
+                <div class="card" style="max-width: 400px; margin: 0 auto;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/JEUX.png" class="card-img-top" alt="explorerjeux">
+                    <div class="card-body">
+                        <h5 class="card-title">DÉCROUVRE LES JEUX VIDÉO</h5>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video'))); ?>" class="custom-button">EXPLORER</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card" style="max-width: 400px; margin: 0 auto;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/CONSOLES.png" class="card-img-top" alt="explorerconsoles">
+                    <div class="card-body">
+                        <h5 class="card-title">DÉCROUVRE LES CONSOLES</h5>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles'))); ?>" class="custom-button">EXPLORER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div class="container">
         <div class="row gy-5 mb-5">

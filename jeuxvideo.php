@@ -5,10 +5,10 @@ include_once  'includes/randomName.php';
 ?>
 
 <body>
-<nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
+    <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
-                <img src="<?php echo get_template_directory_uri(); ?>/!!" alt="Logo" width="70" height="58">
+                <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@ include_once  'includes/randomName.php';
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>LES JEUX VIDÉO</b></h1>
-            <p class="lead lead-md">Échangez vos jeux vidéo préférés et découvrez de nouvelles aventures sans dépenser un centime !</p>
+            <p class="lead lead-md">Échange tes jeux vidéo préférés et découvre de nouvelles aventures sans dépenser un centime !</p>
         </div>
     </div>
 

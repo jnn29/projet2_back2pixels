@@ -14,7 +14,7 @@ if (!is_user_logged_in()) {
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
-                <img src="<?php echo get_template_directory_uri(); ?>/!!" alt="Logo" width="70" height="58">
+                <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@ if (!is_user_logged_in()) {
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>INSCRIPTION</b></h1>
-            <p class="lead lead-md">Rejoignez la communauté en quelques clics : inscrivez-vous et commencez à échanger vos jeux et consoles dès maintenant !</p>
+            <p class="lead lead-md">Rejoins la communauté en quelques clics : inscris-toi et commence à échanger tes jeux et consoles dès maintenant !</p>
         </div>
     </div>
 
