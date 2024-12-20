@@ -100,14 +100,58 @@ get_header();
         <div id="messages" style="height: 500px; overflow-y: auto; border: 1px solid #000; padding: 10px; margin-bottom: 10px;"></div>
             <div style="display: flex; gap: 3px; margin-bottom: 10px;">
                 <input type="text" id="messageInput" placeholder="Écrivez un message..." style="flex: 1;" />
-                <button type="submit" class="custom-button">Envoyer</button>      
+                <button type="submit" class="custom-button" id="sendButton">Envoyer</button>      
             </div>
         </div>
     </div>
 
-<?php get_footer(); ?>
+<script>
 
+    document.addEventListener('DOMContentLoaded', () => {
+    const messagesDiv = document.getElementById('messages');
+    const messageInput = document.getElementById('messageInput');
+    const sendButton = document.getElementById('sendButton');
 
+    if (!messagesDiv || !messageInput || !sendButton) {
+        console.error("Un ou plusieurs éléments requis sont manquants dans le DOM.");
+        return;
+    }
+
+    function addMessage(content, type = 'sent') {
+        if (!content) return;
+
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', type);
+        messageDiv.style.marginBottom = "5px";
+        messageDiv.style.padding = "10px";
+        messageDiv.style.borderRadius = "5px";
+        messageDiv.style.backgroundColor = type === 'sent' ? '#d1e7dd' : '#f8d7da';
+
+        messageDiv.textContent = content;
+        messagesDiv.appendChild(messageDiv);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scrolle automatiquement en bas
+    }
+
+    function handleSendMessage() {
+        const message = messageInput.value.trim();
+        if (message) {
+            addMessage(message, 'sent');
+            messageInput.value = '';
+            setTimeout(() => {
+                addMessage('Réponse automatique', 'received');
+            }, 1000);
+        }
+    }
+
+    sendButton.addEventListener('click', handleSendMessage);
+    messageInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            handleSendMessage();
+        }
+    });
+});
+</script>  
+    
 </body>
 
 <?php get_footer(); ?>
