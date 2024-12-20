@@ -105,7 +105,7 @@ get_header();
         </div>
     </div>
 
-<script>
+    <script>
 
     document.addEventListener('DOMContentLoaded', () => {
     const messagesDiv = document.getElementById('messages');
