@@ -82,4 +82,13 @@ if ( tf_check_user_role($roles) ) {
 	add_filter('show_admin_bar', '__return_false');
 }
 
+function messagerie_shortcode() {
+  ob_start();
+  include 'chemin/vers/votre/fichier/messagerie.php';
+  return ob_get_clean();
+}
+add_shortcode('messagerie', 'messagerie_shortcode');
+
+
+
 ?>
