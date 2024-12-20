@@ -3,7 +3,7 @@
         <div class="d-flex flex-wrap justify-content-between align-items-start">
 
             <div class="mb-4" style="flex: 1; text-align: left;">
-                <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" alt="Logo" style="max-width: 150px;">
+                <img src="<?php echo get_template_directory_uri(); ?>/Logo.svg" alt="Logo" style="max-width: 150px;">
             </div>
 
 

@@ -1,97 +1,15 @@
 <?php
 
+get_header();
+?>
 
-    session_start();
-
-        if (!isset($_SESSION['messages'])) {
-            $_SESSION['messages'] = [
-                ["type" => "received", "content" => "Bonjour, comment ça va ?"],
-                ["type" => "received", "content" => "Tu aimes les jeux vidéo ?"],
-            ];
-        }
-
-        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message'])) {
-            $userMessage = htmlspecialchars($_POST['message']); 
-            $_SESSION['messages'][] = ["type" => "sent", "content" => $userMessage];
-
-            $autoResponse = "Merci pour votre message : \"" . $userMessage . "\". Nous vous répondrons bientôt !";
-            $_SESSION['messages'][] = ["type" => "received", "content" => $autoResponse];
-        }
-
-        $messagesToDisplay = $_SESSION['messages'];
-
-        unset($_SESSION['messages']);
-
-
-        get_header();
-        ?>
-
-    
-        <style>
-            .row {
-                display: flex;
-                align-items: stretch;
-            }
-
-            .sidebar {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #f4f4f4;
-                padding: 10px;
-                border-right: 1px solid #ddd;
-            }
-
-            .profile {
-                width: 100%;
-                text-align: center;
-                padding: 10px;
-                border: 1px solid #ddd;
-                margin-bottom: 5px;
-                background-color: #f9f9f9;
-                border-radius: 4px;
-            }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .card-body {
-                flex: 1;
-                overflow-y: auto;
-                background-color: #f9f9f9;
-            }
-
-            .custom-button {
-                background-color: #007bff;
-                color: white;
-                border: none;
-                padding: 8px 12px;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            .custom-button:hover {
-                background-color: #0056b3;
-            }
-
-            .text-right {
-                text-align: right;
-                color: blue;
-            }
-
-            .text-left {
-                text-align: left;
-                color: green;
-            }
-    </style>
 
 <body>
+
     <nav class="navbar navbar-expand-lg" style="background-color: #7058A8;">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="<?php echo get_template_directory_uri(); ?>/Fichier 4.svg" 
+                <img src="<?php echo get_template_directory_uri(); ?>/Logo.svg" 
                     alt="Logo" width="60" height="48">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -120,56 +38,76 @@
         </div>
     </nav>
 
+    <div style="display: flex; gap: 10px;">
+   
+    <div id="profiles" style="width: 200px; border: 1px solid #000; padding: 10px; margin-bottom: 10px; margin-top: 10px;;">
+        <h5>PROFILS</h5>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img 
+                src="https://robohash.org/2a02:1808:81:2cca:a99d:c3b2:362:79b5.png" 
+                alt="Avatar Profil 1" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px;"/>
+                <span>Juan</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/Green" 
+                alt="Avatar Profil 2" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px;" />
+                <span>Luis</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/lala" 
+                alt="Avatar Profil 3" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Pedro</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/orange" 
+                alt="Avatar Profil 4" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Tama</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/black" 
+                alt="Avatar Profil 5" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Camellia</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/yellow" 
+                alt="Avatar Profil 6" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Luz</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/violet" 
+                alt="Avatar Profil 7" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Augustine</span>
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="https://robohash.org/POPOP" 
+                alt="Avatar Profil 8" 
+                style="border-radius: 50%; margin-right: 10px; width: 50px; height: 50px" />
+                <span>Diego</span>
+            </li>
+        </ul>
+    </div>
+
     
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 sidebar">
-                <h5 class="text-center">PROFILS</h5>
-                <?php
-                $profils = ["Juan", "Luis", "Pedro", "Raleigh", "Nancie", "Tama", "Camellia", "Augustine", "Christeen", "Luz", "Diego"];
-                foreach ($profils as $index => $profil) {
-                    echo "<div class='profile' id='profile" . ($index + 1) . "'>$profil</div>";
-                }
-                ?>
-            </div>
-
-            <div class="col-md-9">
-                <div class="card" style="height: 700px; display: flex; flex-direction: column;">
-                    <h5>
-                        <div class="card-header" id="chatHeader">Messages</div>
-                    </h5>
-                    
-                    <div class="messages-container" style="flex-grow: 1; overflow-y: auto; padding: 10px;">
-                        <?php
-                            foreach ($messagesToDisplay as $message) {
-                                $class = $message['type'] === "sent" ? "text-right" : "text-left";
-                                echo '<p class="' . $class . '">' . htmlspecialchars($message['content']) . '</p>';
-                            }
-                        ?>
-                    </div>
-
-                   
-
-                    <div class="card-footer">
-                        <form method="post" action="">
-                            <div class="input-group">
-                                <input 
-                                    type="text" 
-                                    id="messageInput" 
-                                    name="message" 
-                                    class="form-control" 
-                                    placeholder="Écrivez un message..." 
-                                    required 
-                                    style="height: 50px;">
-                                <button type="submit" class="custom-button">Envoyer</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div style="flex: 1; margin-top: 10px;">
+        <div id="messages" style="height: 500px; overflow-y: auto; border: 1px solid #000; padding: 10px; margin-bottom: 10px;"></div>
+            <div style="display: flex; gap: 3px; margin-bottom: 10px;">
+                <input type="text" id="messageInput" placeholder="Écrivez un message..." style="flex: 1;" />
+                <button type="submit" class="custom-button">Envoyer</button>      
             </div>
         </div>
     </div>
+
+<?php get_footer(); ?>
+
+
 </body>
 
 <?php get_footer(); ?>
