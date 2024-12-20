@@ -121,7 +121,7 @@ include_once  'includes/randomName.php';
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title(); ?></h5>
                         <p><?php the_content(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="custom-button">MESSAGE</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ include_once  'includes/randomName.php';
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title(); ?></h5>
                         <p><?php the_content(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="custom-button">MESSAGE</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>

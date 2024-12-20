@@ -62,8 +62,8 @@ include_once  'includes/randomName.php';
         $i = 1;
     ?>
 
-    <div class="container my-5">
-        <div class="row gy-5">
+    <div class="container">
+        <div class="row gy-5 mb-5">
         <?php while ($stations->have_posts()) : $stations->the_post(); ?>
             <div class="col-6 col-md-3">
                 <div class="card" style="max-width: 250px; margin: 0 auto;">
@@ -76,22 +76,6 @@ include_once  'includes/randomName.php';
                         <span class="ms-2"><?php echo $name; ?></span>
                     </div>
 
-                        <?php
-                        // Récupérer le lien personnalisé pour cet article
-                        $custom_link = get_field('custom_link');
-                        
-                        // Si un lien personnalisé est défini, utiliser celui-ci, sinon utiliser le lien de l'article
-                        if ($custom_link) {
-                            // Si l'URL est relative, ajouter dynamiquement l'URL de base (home_url)
-                            if (strpos($custom_link, 'http') !== 0) {
-                                $custom_link = home_url($custom_link);  // Dynamique en fonction de l'environnement
-                            }
-                        } else {
-                            // Si aucun lien personnalisé n'est défini, utiliser le lien de l'article comme fallback
-                            $custom_link = get_permalink();
-                        }
-                        ?>
-
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('medium', [
                             'class' => 'card-img-top'
@@ -101,7 +85,7 @@ include_once  'includes/randomName.php';
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title(); ?></h5>
                         <p><?php the_content(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="custom-button">MESSAGE</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>

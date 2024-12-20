@@ -3,7 +3,7 @@
 
 get_header();?>
 
-<body>
+
     
 <body>
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
