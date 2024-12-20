@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Jeux Vidéo */
+/* Template Name: Jeux Video */
 get_header();
 include_once  'includes/randomName.php';
 ?>
@@ -68,15 +68,32 @@ include_once  'includes/randomName.php';
                         <img src="<?php echo 'https://robohash.org/' . $name; ?>" 
                             alt="Avatar personnalisé" 
                             class="img-thumbnail" 
-                            style="width: 40px; height: 40px;" />
-                        <span class="ms-2"><?php echo $name; ?></span>
-                    </div>
+                                style="width: 40px; height: 40px;" />
+                            <span class="ms-2"><?php echo $name; ?></span>
+                        </div>
 
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('medium', [
-                            'class' => 'card-img-top'
-                        ]); ?>
-                    </a>
+                        <?php
+                        // Récupérer le lien personnalisé pour cet article
+                        $custom_link = get_field('custom_link');
+                        
+                        // Si un lien personnalisé est défini, utiliser celui-ci, sinon utiliser le lien de l'article
+                        if ($custom_link) {
+                            // Si l'URL est relative, ajouter dynamiquement l'URL de base (home_url)
+                            if (strpos($custom_link, 'http') !== 0) {
+                                $custom_link = home_url($custom_link);  // Dynamique en fonction de l'environnement
+                            }
+                        } else {
+                            // Si aucun lien personnalisé n'est défini, utiliser le lien de l'article comme fallback
+                            $custom_link = get_permalink();
+                        }
+                        ?>
+
+                        <a href="<?php echo esc_url($custom_link); ?>">
+                            <?php the_post_thumbnail('medium', [
+                                'class' => 'card-img-top'
+                            ]); ?>
+                        </a>
+
 
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title(); ?></h5>

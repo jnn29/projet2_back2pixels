@@ -76,6 +76,22 @@ include_once  'includes/randomName.php';
                         <span class="ms-2"><?php echo $name; ?></span>
                     </div>
 
+                        <?php
+                        // Récupérer le lien personnalisé pour cet article
+                        $custom_link = get_field('custom_link');
+                        
+                        // Si un lien personnalisé est défini, utiliser celui-ci, sinon utiliser le lien de l'article
+                        if ($custom_link) {
+                            // Si l'URL est relative, ajouter dynamiquement l'URL de base (home_url)
+                            if (strpos($custom_link, 'http') !== 0) {
+                                $custom_link = home_url($custom_link);  // Dynamique en fonction de l'environnement
+                            }
+                        } else {
+                            // Si aucun lien personnalisé n'est défini, utiliser le lien de l'article comme fallback
+                            $custom_link = get_permalink();
+                        }
+                        ?>
+
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('medium', [
                             'class' => 'card-img-top'
