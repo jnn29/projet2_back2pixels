@@ -8,7 +8,7 @@ get_header();?>
 <body>
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="58">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -26,7 +26,12 @@ get_header();?>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous-logged-in'))); ?>" class="nav-link active">Qui sommes-nous</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/profil'))); ?>" class="d-flex align-items-center me-3">
+                    <i class="bi bi-person-fill me-3 footer-icon"></i></a>
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="d-flex align-items-center me-4">
+                    <i class="bi bi-chat-fill footer-icon me-3"></i></a>
+
                     <?php if (is_user_logged_in()):?>
                     <a href="<?php echo wp_logout_url();?>" class="custom-button">Déconnexion</a>
                     <?php endif; ?>
@@ -69,7 +74,7 @@ get_header();?>
 
         <div class="col-md-6">   
                 <h1><b>NARUTO_LPB</b></h1>   
-                <hr style="border-top: 4px solid #000; margin: 15px 0;">  
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;"> 
                 <p><b>Bio</b> : J’ai 27 ans et je vis à Bruxelles. 
                 Je suis collectionneur de jeux vidéo et consoles rétro (Playstaion, Nintendo DS, Gameboy, PSP,...). 
                 Je veux pouvoir agrandir ma collection sans devoir dépenser d’énormes sommes. 

@@ -7,7 +7,7 @@ get_header(); ?>
 
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="58">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -25,7 +25,12 @@ get_header(); ?>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous-logged-in'))); ?>" class="nav-link active">Qui sommes-nous</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/profil'))); ?>" class="d-flex align-items-center me-3">
+                    <i class="bi bi-person-fill me-3 footer-icon"></i></a>
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="d-flex align-items-center me-4">
+                    <i class="bi bi-chat-fill footer-icon me-3"></i></a>
+
                     <?php if (is_user_logged_in()):?>
                     <a href="<?php echo wp_logout_url();?>" class="custom-button">Déconnexion</a>
                     <?php endif; ?>
@@ -43,7 +48,7 @@ get_header(); ?>
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>TETRIS</b></h1>
-            <p class="lead lead-md">allalllalalallalalalalalalal</p>
+            <p class="lead lead-md">La simplicité qui défie l'esprit.</p>
         </div>
     </div>
 
@@ -58,6 +63,7 @@ get_header(); ?>
 
         <div class="col-md-6">
             <h1><b>Tetris (1984)</b></h1>
+            <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
             <p>Tetris (1984) est un jeu de puzzle iconique où les joueurs doivent empiler des blocs
                 géométriques appelés tetriminos, qui tombent dans une grille. Le but est de former des
                 lignes complètes pour les faire disparaître et éviter que la pile n'atteigne le haut de
@@ -72,8 +78,7 @@ get_header(); ?>
             </ul>
 
             <div class="text-end">
-            <a href="<?php echo get_permalink(110); ?>" class="custom-button">MESSAGE</a>
-            </div>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="custom-button">MESSAGE</a>
         </div>
     </div>
 </div>

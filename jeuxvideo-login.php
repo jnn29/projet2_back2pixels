@@ -1,13 +1,17 @@
 <?php 
 /* Template Name: Jeux Vidéo Logged In */
 
-get_header(); ?>   
-    
+
+get_header();  
+include_once  'includes/randomName.php';
+
+
+?>     
  <body>   
 
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="58">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -25,7 +29,12 @@ get_header(); ?>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous-logged-in'))); ?>" class="nav-link active">Qui sommes-nous</a>
                     </li>
                 </ul>
-                <div class="ms-auto">
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/profil'))); ?>" class="d-flex align-items-center me-3">
+                    <i class="bi bi-person-fill me-3 footer-icon"></i></a>
+                    <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="d-flex align-items-center me-4">
+                    <i class="bi bi-chat-fill footer-icon me-3"></i></a>
+
                     <?php if (is_user_logged_in()):?>
                     <a href="<?php echo wp_logout_url();?>" class="custom-button">Déconnexion</a>
                     <?php endif; ?>
@@ -50,13 +59,6 @@ get_header(); ?>
 
 
 
-    <div class="container">
-        <div class="row gy-5 mb-5">
-            <div class="col-6 col-md-3">
-                <h1><br><b>JEUX VIDÉO</b></br></h1>
-            </div>
-        </div>
-    </div>
 
 </body>
 
@@ -64,7 +66,8 @@ get_header(); ?>
 
 
 
-    <?php
+
+<?php
         $games = new WP_Query([
         'post_type' => 'games',
         'post_status' => 'publish'
@@ -89,17 +92,17 @@ get_header(); ?>
                         </div>
 
                             <?php
-                            // Récupérer le lien personnalisé pour cet article
+                            
                             $custom_link = get_field('custom_link');
                             
-                            // Si un lien personnalisé est défini, utiliser celui-ci, sinon utiliser le lien de l'article
+                            
                             if ($custom_link) {
-                                // Si l'URL est relative, ajouter dynamiquement l'URL de base (home_url)
+                                
                                 if (strpos($custom_link, 'http') !== 0) {
-                                    $custom_link = home_url($custom_link);  // Dynamique en fonction de l'environnement
+                                    $custom_link = home_url($custom_link);
                                 }
                             } else {
-                                // Si aucun lien personnalisé n'est défini, utiliser le lien de l'article comme fallback
+                                
                                 $custom_link = get_permalink();
                             }
                             ?>
@@ -114,7 +117,7 @@ get_header(); ?>
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title(); ?></h5>
                         <p><?php the_content(); ?></p>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/inscription'))); ?>" class="custom-button">MESSAGE</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="custom-button">MESSAGE</a>
                     </div>
                 </div>
             </div>

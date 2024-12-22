@@ -6,7 +6,7 @@ get_header();?>
 <body>
     <nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
         <div class="container">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/homepage'))); ?>" class="navbar-brand">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -46,6 +46,7 @@ get_header();?>
 
     <div class="container my-5">
         <h1><b>MENTIONS LÉGALES</b></h1>
+        <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
         
         <p>Back2Pixels</p>
         <P>ASBL</p>

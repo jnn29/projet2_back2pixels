@@ -51,6 +51,7 @@ get_header();?>
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h1><b>BACK2PIXELS C’EST QUOI ?</b></h1>
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
                 <p>Back2pixels, la plateforme dédiée aux passionnés de jeux
                     vidéo ! Nous avons créé un espace où tout le monde 
                     peut facilement échanger ses jeux, consoles, et 
@@ -88,6 +89,7 @@ get_header();?>
 
             <div class="col-md-6">
                 <h1><b>NOTRE MISSION</b></h1>
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
                 <p>Chez Back2Pixels, notre mission est de rendre le monde
                     du gaming accessible à tous en créant un espace où
                     les passionnés peuvent échanger facilement leurs
@@ -111,6 +113,7 @@ get_header();?>
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h1><b>NOTRE HISTOIRE</b></h1>
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
                 <p>L’aventure de Back2Pixels a commencé avec une
                     simple idée : permettre aux joueurs de découvrir
                     de nouveaux jeux sans se ruiner et de donner une
@@ -149,6 +152,7 @@ get_header();?>
 
             <div class="col-md-6">
                 <h1><b>CONFIANCE ET SÉCURITÉ</b></h1>
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
                 <p>Nous savons que la sécurité et la confiance 
                     sont essentielles pour une expérience 
                     d’échange réussie. C’est pourquoi nous avons 

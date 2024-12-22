@@ -56,7 +56,7 @@ include_once  'includes/randomName.php';
                 <div class="card" style="max-width: 400px; margin: 0 auto;">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/JEUX.png" class="card-img-top" alt="explorerjeux">
                     <div class="card-body">
-                        <h5 class="card-title">DÉCROUVRE LES JEUX VIDÉO</h5>
+                        <h5 class="card-title">DÉCOUVRE LES JEUX VIDÉO</h5>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video'))); ?>" class="custom-button">EXPLORER</a>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ include_once  'includes/randomName.php';
                 <div class="card" style="max-width: 400px; margin: 0 auto;">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/CONSOLES.png" class="card-img-top" alt="explorerconsoles">
                     <div class="card-body">
-                        <h5 class="card-title">DÉCROUVRE LES CONSOLES</h5>
+                        <h5 class="card-title">DÉCOUVRE LES CONSOLES</h5>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles'))); ?>" class="custom-button">EXPLORER</a>
                     </div>
                 </div>
@@ -81,6 +81,7 @@ include_once  'includes/randomName.php';
         <div class="row gy-5 mb-5">
             <div class="col-6 col-md-3">
                 <h1><br><b>FIL D'ACTUALITÉ</b></br></h1>
+                <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
             </div>
         </div>
     </div>
