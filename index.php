@@ -6,37 +6,55 @@ get_header();
 
 <body>
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #7058A8;">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <img src="<?php echo get_template_directory_uri(); ?>/Logo.svg" 
-                    alt="Logo" width="60" height="48">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg position-absolute w-100" style="z-index: 10;">
+    <div class="container">
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="navbar-brand d-flex flex-column flex-lg-row align-items-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" width="70" height="58">
+            <span class="d-none d-lg-block ms-2">Votre texte ici</span> <!-- Texte visible uniquement sur grand écran -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/jeux-video-logged-in'))); ?>" class="nav-link active">Jeux vidéo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/consoles-logged-in'))); ?>" class="nav-link active">Consoles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('/qui-sommes-nous-logged-in'))); ?>" class="nav-link active">Qui sommes-nous</a>
+                </li>
+            </ul>
+            <div class="ms-auto d-flex align-items-center">
+                <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/profil'))); ?>" class="d-flex align-items-center me-3">
+                <i class="bi bi-person-fill me-3 footer-icon"></i></a>
+                <a class="text-white" href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="d-flex align-items-center me-4">
+                <i class="bi bi-chat-fill footer-icon me-3"></i></a>
 
-            <div class="collapse navbar-collapse" id="menu">
-                <b><ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                      <h5><a class="nav-link active" aria-current="page" href="<?php echo get_permalink(64); ?>">Jeux vidéo</a></h5>
-                    </li>
-                    <li class="nav-item">
-                        <h5><a class="nav-link active" aria-current="page" href="<?php echo get_permalink(68); ?>">Consoles</a></h5>
-                    </li>
-                    <li class="nav-item">
-                        <h5><a class="nav-link active" aria-current="page" href="<?php echo get_permalink(); ?>">Qui sommes-nous</a></h5>
-                    </li>
-                </ul></b>
-
-                <div class="ms-auto">
-                   <button class="custom-button">S'inscrire/se connecter</button>
-                   <button class="custom-button">Créer une annonce</button>
-                </div>
+                <?php if (is_user_logged_in()):?>
+                <a href="<?php echo wp_logout_url();?>" class="custom-button">Déconnexion</a>
+                <?php endif; ?>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('/creer-une-annonce'))); ?>" class="custom-button">Créer une annonce</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<div class="position-relative">
+    <img src="<?php echo get_template_directory_uri(); ?>/hero.png" 
+        alt="gensquijouent" 
+        class="img-fluid w-100" 
+        style="border-radius: 0; object-fit: cover;">
+
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3 p-md-4">
+        <h1 class="display-3 display-md-1"><b>BACK2PIXELS</b></h1>
+        <p class="lead lead-md">Échangez facilement et connectez-vous avec des passionnés comme vous ! T’es prêt ? À toi de jouer !</p>
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('/creer-une-annonce'))); ?>" class="custom-button">CRÉER UNE ANNONCE</a>
+    </div>
+</div>
+
 
     <div style="display: flex; gap: 10px;">
    
