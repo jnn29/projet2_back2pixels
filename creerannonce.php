@@ -64,7 +64,6 @@ get_header();?>
             <button type="button" class="custom-button" style="background-color: white;">Ajouter des photos</button>
         </div>
 
-            <!-- Formulaire avec largeur 100% -->
         <form method="POST" action="votre_action.php" class="w-100">
                 <div class="mb-3">
                     <label for="exampleInputTitre1" class="form-label"><b>Titre</b></label>

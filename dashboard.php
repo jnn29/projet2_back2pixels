@@ -1,8 +1,8 @@
 <?php
 /* Template Name: Dashboard */
 
-if (!is_user_logged_in()) {  // je vérifie si je suis connecté
-  wp_redirect( home_url() . "/connexion" ); // si pas je redirige vers la page login
+if (!is_user_logged_in()) { 
+  wp_redirect( home_url() . "/connexion" );
 	exit;
 }
 
@@ -126,8 +126,6 @@ include_once  'includes/randomName.php';
                             <?php
                             
                             $custom_link = get_field('custom_link');
-                            
-                            
                             if ($custom_link) {
                                 
                                 if (strpos($custom_link, 'http') !== 0) {
@@ -189,10 +187,7 @@ include_once  'includes/randomName.php';
                         </div>
 
                             <?php
-                            
                             $custom_link = get_field('custom_link');
-                            
-                            
                             if ($custom_link) {
                                 if (strpos($custom_link, 'http') !== 0) {
                                     

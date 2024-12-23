@@ -63,7 +63,7 @@ include_once  'includes/randomName.php';
         $i = 1;
     ?>
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row gy-5 mb-5">
         <?php while ($stations->have_posts()) : $stations->the_post(); ?>
             <div class="col-6 col-md-3">

@@ -48,9 +48,12 @@ get_header(); ?>
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>TETRIS</b></h1>
-            <p class="lead lead-md">La simplicité qui défie l'esprit.</p>
+            <p class="lead lead-md">La simplicité qui défie l'esprit</p>
         </div>
     </div>
+
+
+
 
     <div class="container">
     <div class="row my-5">
@@ -64,11 +67,13 @@ get_header(); ?>
         <div class="col-md-6">
             <h1><b>Tetris (1984)</b></h1>
             <hr style="border-top: 6px solid #7058A8; margin: 5px 0;">
-            <p>Tetris (1984) est un jeu de puzzle iconique où les joueurs doivent empiler des blocs
-                géométriques appelés tetriminos, qui tombent dans une grille. Le but est de former des
-                lignes complètes pour les faire disparaître et éviter que la pile n'atteigne le haut de
-                l'écran. Avec sa simplicité addictive et sa montée progressive en difficulté, Tetris,
-                conçu par Alexey Pajitnov en URSS, est devenu un classique intemporel du jeu vidéo.</p>
+            <p>Tetris (1984) est un jeu de puzzle où le joueur doit empiler des pièces géométriques
+                appelées Tetriminos pour former des lignes complètes. Lorsque ces lignes disparaissent,
+                le joueur marque des points. Le but est d'empêcher les pièces de s'empiler jusqu'en haut
+                de l'écran, car le jeu se termine lorsque cela se produit. Plus les niveaux progressent,
+                plus la vitesse de chute des pièces augmente, rendant le jeu de plus en plus difficile.
+                Simple mais addictif, Tetris est devenu l'un des jeux les plus populaires et influents
+                de l'histoire du jeu vidéo.</p>
 
             <ul>
                 <li>GAME BOY</li>
@@ -79,6 +84,7 @@ get_header(); ?>
 
             <div class="text-end">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/chat-box'))); ?>" class="custom-button">MESSAGE</a>
+            </div>
         </div>
     </div>
 </div>

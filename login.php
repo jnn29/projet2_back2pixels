@@ -1,8 +1,7 @@
 <?php
 /* Template Name: Log In */
 
-if (!is_user_logged_in()) {
-  // si je suis déjà connecté je suis redirigé vers la page home
+if (is_user_logged_in()) {
   wp_redirect( home_url('/') );
 	exit;
 }
@@ -58,7 +57,6 @@ get_header();
 
     <div class="container my-5">
         <form action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post" class="mx-auto" style="max-width: 400px;">
-            <!-- Champ pour le nom d'utilisateur ou e-mail -->
             <div class="mb-3">
                 <label for="log" class="form-label">Nom d'utilisateur ou adresse e-mail</label>
                 <input 
@@ -71,7 +69,6 @@ get_header();
                     required>
             </div>
 
-            <!-- Champ pour le mot de passe -->
             <div class="mb-3">
                 <label for="pwd" class="form-label">Mot de passe</label>
                 <input 
@@ -83,7 +80,6 @@ get_header();
                     required>
             </div>
 
-            <!-- Bouton de connexion -->
             <div class="d-grid">
                 <input 
                     type="submit" 
@@ -92,7 +88,6 @@ get_header();
                     class="custom-button">
             </div>
 
-            <!-- Champ caché pour la redirection -->
             <input 
                 type="hidden" 
                 name="redirect_to" 

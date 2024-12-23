@@ -85,17 +85,12 @@ include_once  'includes/randomName.php';
                         </div>
 
                             <?php
-                            // Récupérer le lien personnalisé pour cet article
                             $custom_link = get_field('custom_link');
-                            
-                            // Si un lien personnalisé est défini, traiter les cas relatifs et absolus
                             if ($custom_link) {
                                 if (strpos($custom_link, 'http') !== 0) {
-                                    // Ajouter l'URL de base pour les liens relatifs
                                     $custom_link = home_url($custom_link);
                                 }
                             } else {
-                                // Fallback au lien de l'article si aucun lien personnalisé n'est défini
                                 $custom_link = get_permalink();
                             }
                             ?>
