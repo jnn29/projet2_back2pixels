@@ -58,7 +58,6 @@ include_once  'includes/randomName.php';
 
 
 
-
     <?php
         $stations = new WP_Query([
         'post_type' => 'stations',

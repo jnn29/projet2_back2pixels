@@ -41,7 +41,7 @@ get_header();?>
             style="border-radius: 0;">
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
-            <h1 class="display-3 display-md-1"><b>QUI SOMME-NOUS</b></h1>
+            <h1 class="display-3 display-md-1"><b>QUI SOMMES-NOUS</b></h1>
             <p class="lead lead-md">Une équipe dédiée à créer des échanges simples et fiables entre joueurs : découvre notre mission et rejoins la communauté !</p>
         </div>
     </div>
