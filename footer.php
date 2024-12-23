@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row text-center text-md-start">
             <div class="col-12 col-md-3 mb-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/logo/Fichier 2 - Copie.svg" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                <img src="<?php echo get_template_directory_uri(); ?>/logo/Logo.svg" alt="Logo" class="img-fluid" style="max-width: 150px;">
             </div>
 
             <div class="col-12 col-md-3 mb-4">

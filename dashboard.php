@@ -57,8 +57,7 @@ include_once  'includes/randomName.php';
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
             <h1 class="display-3 display-md-1"><b>BACK2PIXELS</b></h1>
-            <p class="lead lead-md">Le site où vos jeux et consoles trouvent une nouvelle vie : échangez facilement et connectez-vous avec des passionnés comme vous !</p>
-            <p class="lead lead-md"><b>T’es prêt ? À toi de jouer !</b></p>
+            <p class="lead lead-md">Échangez facilement et connectez-vous avec des passionnés comme vous ! T’es prêt ? À toi de jouer !</p>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('/creer-une-annonce'))); ?>" class="custom-button">CRÉER UNE ANNONCE</a>
         </div>
     </div>
