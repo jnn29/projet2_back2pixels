@@ -48,7 +48,7 @@ get_header();?>
             style="border-radius: 0;">
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white  p-md-4">
-            <h1 class="display-3 display-md-1"><b>PALYSTATION 1</b></h1>
+            <h1 class="display-3 display-md-1"><b>PLAYSTATION 1</b></h1>
             <p class="lead lead-md">L'ère du jeu en 3D commence ici.</p>
         </div>
     </div>

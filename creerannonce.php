@@ -88,7 +88,7 @@ get_header();?>
                 </div>
 
                 <div class="d-flex justify-content-end mt-3">
-                    <button type="submit" class="custom-button">Ajouter</button>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('/dashboard'))); ?>" class="custom-button">AJOUTER</a>
                 </div>
         </form>
 
